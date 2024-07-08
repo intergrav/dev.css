@@ -1,6 +1,6 @@
 # intergrav/dev.css
 
-Extremely simple, small, classless CSS framework in the style of Vercel's Geist. It weighs only ***~5.0kb***, and makes any plain HTML file look great.
+Extremely simple, small, classless CSS framework in the style of Vercel's Geist. It weighs only ***~5.0kb***, and makes any plain HTML file look great. It has a light and dark theme, and the header turns into a sidebar on wider displays so that you get more vertical space.
 
 ## Importing
 
