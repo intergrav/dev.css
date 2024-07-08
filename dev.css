@@ -194,6 +194,25 @@ header {
   backdrop-filter: blur(16px);
 }
 
+/* Make heading text small if header is not moved to the side */
+@media (max-width: 1451px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header h2 {
+    font-size: 1.4rem;
+  }
+
+  header h3 {
+    font-size: 1.2rem;
+  }
+
+  header h4 {
+    font-size: 1rem;
+  }
+}
+
 /* Move header to the side to preserve vertical space, if screen is minimum width 1452px */
 @media (min-width: 1452px) {
   header {
