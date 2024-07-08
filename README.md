@@ -8,7 +8,7 @@ It has a light and dark theme, and the header turns into a sidebar on wider disp
 
 ## Importing
 
-In your HTML's `<head>` all you have to write is this, and you're done!
+In your HTML's `<head>` all you have to write is this, and you're done! (`.min` means to minify the file)
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@1">
@@ -33,4 +33,7 @@ I also recommend adding a font through [intergrav/fonts](https://github.com/inte
 
 ## Themes
 
-You can also use custom colors and fonts in dev.css through themes. See the `/theme` folder to view some premade ones. You can also copy the `boilerplate.css` and make a theme yourself. Simply apply it after the dev.css stylesheet.
+You can also use custom colors and custom fonts in dev.css through themes. See the `/theme` folder to view some premade ones. You can also copy the `boilerplate.css` and make a theme yourself. Simply apply it after the dev.css stylesheet. For example, to apply the terminal theme, put this after your main stylesheet:
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@1/theme/terminal.min.css">
+```
