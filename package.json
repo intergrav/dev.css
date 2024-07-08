@@ -1,0 +1,16 @@
+{
+    "name": "@intergrav/dev.css",
+    "version": "1.0.0",
+    "description": "Extremely simple, small, classless CSS framework in the style of Vercel's Geist design system. Fork of xz/new.css.",
+    "main": "dev.css",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/intergrav/dev.css.git"
+    },
+    "author": "intergrav (intergrav@proton.me)",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/intergrav/dev.css/issues"
+    },
+    "homepage": "https://github.com/intergrav/dev.css#readme"
+  }
