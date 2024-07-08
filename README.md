@@ -1,10 +1,10 @@
 # intergrav/dev.css
 
-![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/@intergrav/dev.css) [![GitHub Repo stars](https://img.shields.io/github/stars/intergrav/dev.css)](https://github.com/intergrav/dev.css)
+[![NPM Version](https://img.shields.io/npm/v/@intergrav/dev.css)](https://www.npmjs.com/package/@intergrav/dev.css) [![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/@intergrav/dev.css)](https://cdn.jsdelivr.net/npm/@intergrav/dev.css/) [![GitHub Repo stars](https://img.shields.io/github/stars/intergrav/dev.css)](https://github.com/intergrav/dev.css)
 
 Extremely simple, small, classless CSS framework in the style of Vercel's Geist. Inspired by [xz/new.css](https://github.com/xz/new.css).
 
-It weighs only **~5kb** and makes any plain HTML file look great. 
+The minified stylesheet weighs only **~5kb** and can make any plain HTML file look clean and modern. 
 
 It has a light and dark theme, and the header turns into a sidebar on wider displays so that you get more vertical space.
 

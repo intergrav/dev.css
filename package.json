@@ -1,6 +1,6 @@
 {
     "name": "@intergrav/dev.css",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Extremely simple, small, classless CSS framework in the style of Vercel's Geist design system. Fork of xz/new.css.",
     "main": "dev.css",
     "repository": {
