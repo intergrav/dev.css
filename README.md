@@ -1,6 +1,10 @@
 # intergrav/dev.css
 
-Extremely simple, small, classless CSS framework in the style of Vercel's Geist. It weighs only **~5kb** and makes any plain HTML file look great. It has a light and dark theme, and the header turns into a sidebar on wider displays so that you get more vertical space.
+Extremely simple, small, classless CSS framework in the style of Vercel's Geist. Inspired by [xz/new.css](https://github.com/xz/new.css).
+
+It weighs only **~5kb** and makes any plain HTML file look great. 
+
+It has a light and dark theme, and the header turns into a sidebar on wider displays so that you get more vertical space.
 
 ## Importing
 
@@ -26,3 +30,7 @@ I also recommend adding a font through [intergrav/fonts](https://github.com/inte
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/inter.min.css">
 ```
+
+## Themes
+
+You can also use custom colors and fonts in dev.css through themes. See the `/theme` folder to view some premade ones. You can also copy the `boilerplate.css` and make a theme yourself. Simply apply it after the dev.css stylesheet.

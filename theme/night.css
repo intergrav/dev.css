@@ -1,0 +1,16 @@
+/* This theme will make it always dark, regardless of device setting */
+
+:root {
+  /* Colors */
+  --dc-tx-1: #ededed;
+  --dc-tx-2: #a1a1a1;
+  --dc-bg-1: #000;
+  --dc-bg-2: #ffffff0f;
+  --dc-bg-3: #ffffff24;
+  --dc-lk-1: #52a8ff;
+  --dc-lkb-1: #0072f5;
+  --dc-lkb-2: #0062d1;
+  --dc-lkb-tx: #ededed;
+  --dc-ac-1: #8e4ec6;
+  --dc-ac-tx: #ededed;
+}

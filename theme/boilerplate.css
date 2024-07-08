@@ -1,0 +1,19 @@
+/* This theme is a template that you can modify */
+
+:root {
+  /* Fonts */
+  --dc-font-sans: sans-serif; /* Sans Serif */
+  --dc-font-mono: monospace; /* Monospace */
+  /* Colors */
+  --dc-tx-1: #000000; /* Primary text */
+  --dc-tx-2: #1a1a1a; /* Secondary text */
+  --dc-bg-1: #fafafa; /* Main background */
+  --dc-bg-2: #fff; /* Secondary background */
+  --dc-bg-3: #ebebeb; /* Outlines */
+  --dc-lk-1: #0068d6; /* Link text */
+  --dc-lkb-1: #0072f5; /* Link button background */
+  --dc-lkb-2: #0062d1; /* Link button background (hover) */
+  --dc-lkb-tx: #ededed; /* Link button text */
+  --dc-ac-1: #8e4ec6; /* Accent color */
+  --dc-ac-tx: #ededed; /* Accent color text */
+}
