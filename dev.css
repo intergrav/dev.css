@@ -1,5 +1,5 @@
 :root {
-  /* Fonts - Geist, Inter, Apple default (Gecko and Blink), Microsoft default, browser default */
+  /* Font families - Geist, Inter, Apple default (Gecko and Blink), Microsoft default, browser default */
   --dc-font-sans: "Geist", "Inter", -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
   --dc-font-mono: "Geist Mono", monospace;
@@ -19,8 +19,8 @@
   --dc-d-tx-1: #ededed;
   --dc-d-tx-2: #a1a1a1;
   --dc-d-bg-1: #000;
-  --dc-d-bg-2: #ffffff0f;
-  --dc-d-bg-3: #ffffff24;
+  --dc-d-bg-2: #0A0A0A;
+  --dc-d-bg-3: #2E2E2E;
   --dc-d-lk-1: #52a8ff;
   --dc-d-lkb-1: #0072f5;
   --dc-d-lkb-2: #0062d1;
@@ -174,91 +174,103 @@ abbr:hover {
 blockquote {
   padding: 1.5rem;
   background: var(--dc-bg-2);
-  border-left: 5px solid var(--dc-bg-3);
+  border: 1px solid var(--dc-bg-3);
+  border-left: 6px solid var(--dc-bg-3);
   border-radius: 4px;
 }
 
-blockquote *:last-child {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-/* Header mode */
-@media (max-width: 1415px) {
+@media (max-width: 1424px) {
   header {
     background: var(--dc-bg-2);
     border-bottom: 1px solid var(--dc-bg-3);
-    padding-top: 0.75rem;
-    padding-bottom: 0.55rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.6rem;
     margin: -2rem calc(50% - 50vw) 2rem;
     padding-left: calc(50vw - 50%);
     padding-right: calc(50vw - 50%);
-
-    /* Sticky header if supported */
-    position: sticky;
-    top: 0;
-
-    /* Blur for transparent surface if supported */
-    backdrop-filter: blur(16px);
   }
 
-  /* Divide a elements in nav with bullet point */
   header nav a+a::before {
-    content: " • ";
+    content: "• ";
     color: var(--dc-tx-2);
   }
 
-  /* Change header font sizes */
   header h1 {
     font-size: 1.6rem;
   }
+
   header h2 {
     font-size: 1.4rem;
   }
+
   header h3 {
     font-size: 1.2rem;
   }
+
   header h4 {
     font-size: 1rem;
   }
+
+  header h5 {
+    font-size: 0.9rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
   header nav {
     font-size: 0.9rem;
   }
+
+  header h6 {
+    font-size: 0.8rem;
+  }
+
+  header * {
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
 }
 
-/* Sidebar mode*/
-@media (min-width: 1416px) {
+@media (min-width: 1425px) {
   header {
-    /* Style changes */
     background: none;
-    border-bottom: 0;
     padding: 2rem 1.5rem;
     margin: 0;
-
-    /* Fixed position on the screen */
     position: fixed;
     top: 0;
     left: calc(50% - 700px);
-    width: 260px;
+    width: 255px;
+    height: 100%;
   }
 
-  /* Put nav elements in a separate line */
   header nav {
     display: flex;
     flex-direction: column;
   }
 
-  /* Add dash before nav elements */
   header nav a::before {
     content: "• ";
     color: var(--dc-tx-2);
+  }
+
+  header * {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
 }
 
 header h1,
 header h2,
-header h3 {
-  padding-bottom: 0;
+header h3,
+header h4,
+header h5,
+header h6 {
   border-bottom: 0;
 }
 
@@ -269,6 +281,7 @@ header>*:first-child {
 
 header>*:last-child {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 a button,
@@ -375,16 +388,18 @@ summary {
   font-weight: bold;
 }
 
-details[open] {
-  padding-bottom: 0.75rem;
+details[open] summary {
+  margin-bottom: 8px;
 }
 
-details[open] summary {
-  margin-bottom: 6px;
+details[open]>*:first-child {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 details[open]>*:last-child {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 dt {
