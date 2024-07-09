@@ -19,8 +19,8 @@
   --dc-d-tx-1: #ededed;
   --dc-d-tx-2: #a1a1a1;
   --dc-d-bg-1: #000;
-  --dc-d-bg-2: #0A0A0A;
-  --dc-d-bg-3: #2E2E2E;
+  --dc-d-bg-2: #0a0a0a;
+  --dc-d-bg-3: #2e2e2e;
   --dc-d-lk-1: #52a8ff;
   --dc-d-lkb-1: #0072f5;
   --dc-d-lkb-2: #0062d1;
@@ -190,7 +190,7 @@ blockquote {
     padding-right: calc(50vw - 50%);
   }
 
-  header nav a+a::before {
+  header nav a + a::before {
     content: "• ";
     color: var(--dc-tx-2);
   }
@@ -274,12 +274,12 @@ header h6 {
   border-bottom: 0;
 }
 
-header>*:first-child {
+header > *:first-child {
   margin-top: 0;
   padding-top: 0;
 }
 
-header>*:last-child {
+header > *:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -392,12 +392,12 @@ details[open] summary {
   margin-bottom: 8px;
 }
 
-details[open]>*:first-child {
+details[open] > *:first-child {
   margin-top: 0;
   padding-top: 0;
 }
 
-details[open]>*:last-child {
+details[open] > *:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
