@@ -160,6 +160,11 @@ h6 {
 
 a {
   color: var(--dc-lk-1);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 abbr:hover {
@@ -178,55 +183,75 @@ blockquote *:last-child {
   margin-bottom: 0;
 }
 
-header {
-  background: var(--dc-bg-2);
-  border-bottom: 1px solid var(--dc-bg-3);
-  padding: 0.75rem;
-  margin: -2rem calc(50% - 50vw) 2rem;
-  padding-left: calc(50vw - 50%);
-  padding-right: calc(50vw - 50%);
+/* Header mode */
+@media (max-width: 1415px) {
+  header {
+    background: var(--dc-bg-2);
+    border-bottom: 1px solid var(--dc-bg-3);
+    padding-top: 0.75rem;
+    padding-bottom: 0.55rem;
+    margin: -2rem calc(50% - 50vw) 2rem;
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
 
-  /* Sticky header if supported */
-  position: sticky;
-  top: 0;
+    /* Sticky header if supported */
+    position: sticky;
+    top: 0;
 
-  /* Blur for transparent surface if supported */
-  backdrop-filter: blur(16px);
-}
+    /* Blur for transparent surface if supported */
+    backdrop-filter: blur(16px);
+  }
 
-/* Make heading text small if header is not moved to the side */
-@media (max-width: 1451px) {
+  /* Divide a elements in nav with bullet point */
+  header nav a+a::before {
+    content: " • ";
+    color: var(--dc-tx-2);
+  }
+
+  /* Change header font sizes */
   header h1 {
     font-size: 1.6rem;
   }
-
   header h2 {
     font-size: 1.4rem;
   }
-
   header h3 {
     font-size: 1.2rem;
   }
-
   header h4 {
     font-size: 1rem;
   }
+  header nav {
+    font-size: 0.9rem;
+  }
 }
 
-/* Move header to the side to preserve vertical space, if screen is minimum width 1452px */
-@media (min-width: 1452px) {
+/* Sidebar mode*/
+@media (min-width: 1416px) {
   header {
-    width: 260px;
-    height: auto;
-    position: fixed;
-    left: calc(50% - 725px);
-    background: #ffffff00;
+    /* Style changes */
+    background: none;
     border-bottom: 0;
     padding: 2rem 1.5rem;
     margin: 0;
 
-    /* Disable blur */
-    backdrop-filter: none;
+    /* Fixed position on the screen */
+    position: fixed;
+    top: 0;
+    left: calc(50% - 700px);
+    width: 260px;
+  }
+
+  /* Put nav elements in a separate line */
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Add dash before nav elements */
+  header nav a::before {
+    content: "• ";
+    color: var(--dc-tx-2);
   }
 }
 
@@ -237,12 +262,12 @@ header h3 {
   border-bottom: 0;
 }
 
-header > *:first-child {
+header>*:first-child {
   margin-top: 0;
   padding-top: 0;
 }
 
-header > *:last-child {
+header>*:last-child {
   margin-bottom: 0;
 }
 
@@ -358,7 +383,7 @@ details[open] summary {
   margin-bottom: 6px;
 }
 
-details[open] > *:last-child {
+details[open]>*:last-child {
   margin-bottom: 0;
 }
 
