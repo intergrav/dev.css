@@ -184,7 +184,7 @@ blockquote *:last-child {
   margin-bottom: 0;
 }
 
-@media (max-width: 1424px) {
+@media (max-width: calc(-1px + (750px + 4rem) + ((250px + 2rem)*2))) {
   header {
     background: var(--dc-bg-2);
     border-bottom: 1px solid var(--dc-bg-3);
@@ -240,16 +240,15 @@ blockquote *:last-child {
   }
 }
 
-@media (min-width: 1425px) {
+@media (min-width: calc((750px + 4rem) + ((250px + 2rem)*2))) {
   header {
-    background: none;
-    padding: 2rem 1.5rem;
+    padding: 2rem 2rem;
+    padding-right: 0;
     margin: 0;
     position: fixed;
     top: 0;
-    left: calc(50% - 700px);
-    width: 255px;
-    height: 100%;
+    left: calc(50% - ((750px + 4rem) / 2) - (250px + 2rem));
+    width: 250px;
   }
 
   header nav {
