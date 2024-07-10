@@ -259,7 +259,7 @@ blockquote *:last-child {
     top: 0;
     left: calc(50% - ((750px + 4rem) / 2) - (250px + 2rem));
     width: 250px;
-    height: 100%;
+    height: calc(100% - 1rem);
     overflow-y: auto;
   }
 
