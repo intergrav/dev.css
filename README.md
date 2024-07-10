@@ -37,5 +37,5 @@ I also recommend adding a font through [intergrav/fonts](https://github.com/inte
 
 You can also use custom colors and custom fonts in dev.css through themes. See the `/theme` folder to view some premade ones. You can also copy the `boilerplate.css` and make a theme yourself. Simply apply it after the dev.css stylesheet. For example, to apply the terminal theme, put this after your main stylesheet:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@1/theme/terminal.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@2/theme/terminal.min.css">
 ```
