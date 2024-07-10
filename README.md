@@ -13,7 +13,7 @@ It has a light and dark theme, and the header turns into a sidebar on wider disp
 In your HTML's `<head>` all you have to write is this, and you're done! (`.min` means to minify the file)
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@2">
 ```
 
 I also recommend adding a font through [intergrav/fonts](https://github.com/intergrav/fonts). Geist or Inter work with dev.css out of the box. It will use the default system/browser san-serif fonts otherwise.
