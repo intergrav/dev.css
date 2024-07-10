@@ -238,34 +238,41 @@ blockquote *:last-child {
     margin-top: 0rem;
     margin-bottom: 0rem;
   }
+
+  header > *:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  header > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: calc((750px + 4rem) + ((250px + 2rem)*2))) {
   header {
-    padding: 2rem 2rem;
+    padding: 2rem;
     padding-right: 0;
     margin: 0;
     position: fixed;
     top: 0;
     left: calc(50% - ((750px + 4rem) / 2) - (250px + 2rem));
     width: 250px;
+    height: 100%;
   }
 
   header nav {
     display: flex;
     flex-direction: column;
+    border-top: 1px solid var(--dc-bg-3);
+    padding-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   header nav a::before {
     content: "• ";
     color: var(--dc-tx-2);
-  }
-
-  header * {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
   }
 }
 
@@ -276,16 +283,6 @@ header h4,
 header h5,
 header h6 {
   border-bottom: 0;
-}
-
-header > *:first-child {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-header > *:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 a button,
