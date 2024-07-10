@@ -260,6 +260,7 @@ blockquote *:last-child {
     left: calc(50% - ((750px + 4rem) / 2) - (250px + 2rem));
     width: 250px;
     height: 100%;
+    overflow-y: auto;
   }
 
   header nav {
