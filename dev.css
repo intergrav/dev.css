@@ -100,7 +100,7 @@ body {
   overflow-wrap: break-word;
   background: var(--dc-bg-1);
   color: var(--dc-tx-2);
-  font-size: 1.03rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -123,8 +123,8 @@ h6 {
 h1,
 h2,
 h3 {
-  padding-bottom: 6px;
-  margin-bottom: 8px;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
   border-bottom: 1px solid var(--dc-bg-3);
 }
 
@@ -135,15 +135,15 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.85rem;
+  font-size: 1.75rem;
 }
 
 h3 {
-  font-size: 1.55rem;
+  font-size: 1.5rem;
 }
 
 h4 {
@@ -175,7 +175,7 @@ blockquote {
   padding: 1.5rem;
   background: var(--dc-bg-2);
   border: 1px solid var(--dc-bg-3);
-  border-left: 6px solid var(--dc-bg-3);
+  border-left: 5px solid var(--dc-bg-3);
   border-radius: 4px;
 }
 
@@ -184,7 +184,7 @@ blockquote *:last-child {
   margin-bottom: 0;
 }
 
-@media (max-width: calc(-1px + (750px + 4rem) + ((250px + 2rem)*2))) {
+@media (max-width: calc(-1px + (750px + 4rem) + ((275px + 2rem)*2))) {
   header {
     background: var(--dc-bg-2);
     border-bottom: 1px solid var(--dc-bg-3);
@@ -250,15 +250,15 @@ blockquote *:last-child {
   }
 }
 
-@media (min-width: calc((750px + 4rem) + ((250px + 2rem)*2))) {
+@media (min-width: calc((750px + 4rem) + ((275px + 2rem)*2))) {
   header {
     padding: 2rem;
     padding-right: 0;
     margin: 0;
     position: fixed;
     top: 0;
-    left: calc(50% - ((750px + 4rem) / 2) - (250px + 2rem));
-    width: 250px;
+    left: calc(50% - ((750px + 4rem) / 2) - (275px + 2rem));
+    width: 275px;
     height: calc(100% - 1rem);
     overflow-y: auto;
   }
@@ -345,8 +345,8 @@ pre {
   background: var(--dc-bg-2);
   border: 1px solid var(--dc-bg-3);
   border-radius: 4px;
-  padding: 3px 6px;
-  font-size: 0.9em;
+  padding: 2px 4px;
+  font-size: 0.9rem;
 }
 
 kbd {
@@ -475,7 +475,7 @@ ol ol {
 }
 
 mark {
-  padding: 3px 6px;
+  padding: 2px 4px;
   background: var(--dc-ac-1);
   color: var(--dc-ac-tx);
   border-radius: 4px;
