@@ -9,10 +9,10 @@ The minified stylesheet weighs only **~4.8kb** and can make any plain HTML file 
 <details>
 <summary>Preview</summary>
 
-<img src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/desktop-dark.png" alt="dev.css desktop demo, dark mode">
 <img src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/desktop-light.png" alt="dev.css desktop demo, light mode">
-<img height="748px" src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/mobile-dark.png" alt="dev.css mobile demo, dark mode">
+<img src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/desktop-dark.png" alt="dev.css desktop demo, dark mode">
 <img height="748px" src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/mobile-light.png" alt="dev.css mobile demo, dark mode">
+<img height="748px" src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/mobile-dark.png" alt="dev.css mobile demo, dark mode">
 
 </details>
 
