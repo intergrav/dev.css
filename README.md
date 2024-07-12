@@ -4,7 +4,7 @@
 
 Extremely simple, small, classless CSS framework in the style of Vercel's Geist. Inspired by [xz/new.css](https://github.com/xz/new.css).
 
-The minified stylesheet weighs only **~5kb** and can make any plain HTML file look clean and modern.
+The minified stylesheet weighs only **~4.8kb** and can make any plain HTML file look clean and modern.
 
 It has a light and dark theme, and the header turns into a sidebar on wider displays so that you get more vertical space.
 
