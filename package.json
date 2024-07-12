@@ -19,6 +19,14 @@
 		"geist"
 	],
 	"main": "dev.css",
+	"files": [
+		"theme",
+		"demo.html",
+		"dev.css",
+		"README.md",
+		"LICENSE",
+		"package.json"
+	],
 	"prettier": {
 		"useTabs": true
 	}
