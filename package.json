@@ -21,11 +21,9 @@
 	"main": "dev.css",
 	"files": [
 		"theme",
+		"addon",
 		"demo.html",
-		"dev.css",
-		"README.md",
-		"LICENSE",
-		"package.json"
+		"dev.css"
 	],
 	"prettier": {
 		"useTabs": true
