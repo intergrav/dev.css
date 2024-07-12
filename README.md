@@ -47,7 +47,7 @@ Optionally, you could add a `<p>` tag after the `<h1>` tag if you want to give a
 
 ### Footer
 
-Optionally, use the `<footer>` tag to create a large header for your page. Only use this at the bottom of your `<body>`, or else it may look wonky. You can add whatever content in here that you'd like.
+Optionally, use the `<footer>` tag to create a large footer for your page. Only use this at the bottom of your `<body>`, or else it may look wonky. You can add whatever content in here that you'd like.
 
 ### Text
 
