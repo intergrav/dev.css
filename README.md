@@ -54,7 +54,7 @@ Use the `<header>` tag to create a large header for your page. Only use this at 
 
 For the title, the header should contain an `<h1>` tag. You can also add an `<h4>` tag before the `<h1>` tag if you want to show extra information.
 
-If you need a navigation bar, you can add a `<nav>` with `<a>` links inside it. dev.css will automatically add dividing bullet points between or before the `<a>` tags, depending on whether the user is in topbar or sidebar mode. In sidebar mode, the navigation bar will lay out into separate lines.
+If you need a navigation bar, you can add a `<nav>` with a `<ul>` that has `<li>` items with `<a>` links inside them. See the `demo.html` for an example. dev.css will automatically lay these out horizontally, with dividing bullet points between them. If you are using the `header-sidebar.css` addon, these items will lay out vertically when in sidebar mode.
 
 Optionally, you could add a `<p>` tag after the `<h1>` tag if you want to give a description of the page the user is currently on.
 
