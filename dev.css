@@ -72,7 +72,7 @@
 	}
 }
 
-/* 3. CSS Reset */
+/* 3. CSS Reset - cleaned up https://www.joshwcomeau.com/css/custom-css-reset */
 *,
 *::before,
 *::after {
