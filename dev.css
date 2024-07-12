@@ -230,11 +230,6 @@ header {
 	margin: -2rem calc(50% - 50vw) 2rem;
 }
 
-header nav a + a::before {
-	content: "• ";
-	color: var(--dc-tx-2);
-}
-
 header * {
 	padding-top: 0rem;
 	padding-bottom: 0rem;
