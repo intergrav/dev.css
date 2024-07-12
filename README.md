@@ -2,7 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/@intergrav/dev.css)](https://www.npmjs.com/package/@intergrav/dev.css) [![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/@intergrav/dev.css)](https://cdn.jsdelivr.net/npm/@intergrav/dev.css/) [![GitHub Repo stars](https://img.shields.io/github/stars/intergrav/dev.css)](https://github.com/intergrav/dev.css)
 
-Extremely simple, small, classless CSS framework in the style of Vercel's Geist. Inspired by [xz/new.css](https://github.com/xz/new.css).
+Tiny, simple, classless CSS framework in the style of Vercel's [Geist](https://vercel.com/geist) design system. Inspired by [xz/new.css](https://github.com/xz/new.css).
 
 The minified stylesheet weighs only **~4.8kb** and can make any plain HTML file look clean and modern. It also has a light and dark theme.
 
@@ -14,13 +14,16 @@ In your HTML's `<head>` all you have to write is this, and you're done! (`.min` 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@2">
 ```
 
-I also recommend adding a font through [intergrav/fonts](https://github.com/intergrav/fonts). Geist or Inter work with dev.css out of the box. It will use the default system/browser san-serif fonts otherwise.
+I also recommend adding a font through [intergrav/fonts](https://github.com/intergrav/fonts). Geist or Inter work with dev.css out of the box. It will use the default system/browser san-serif fonts if those are not available.
 
 ### Geist Font
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/geist.min.css">
 ```
+
+Recommended, monospace variant:
+
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/geist-mono.min.css">
 ```
