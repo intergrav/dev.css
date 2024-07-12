@@ -4,7 +4,7 @@
 
 Extremely simple, small, classless CSS framework in the style of Vercel's Geist. Inspired by [xz/new.css](https://github.com/xz/new.css).
 
-The minified stylesheet weighs only **~5kb** and can make any plain HTML file look clean and modern. 
+The minified stylesheet weighs only **~5kb** and can make any plain HTML file look clean and modern.
 
 It has a light and dark theme, and the header turns into a sidebar on wider displays so that you get more vertical space.
 
@@ -57,7 +57,7 @@ For a link button, you can wrap the button in an `<a>` tag. Here's a code exampl
 
 ```html
 <a href="https://example.com">
-  <button>Click me!</button>
+	<button>Click me!</button>
 </a>
 ```
 
@@ -67,8 +67,8 @@ The `<details>` element can make a toggle-able dropdown without using any JavaSc
 
 ```html
 <details>
-  <summary>Click me!</summary>
-  <p>Lorem ipsum dolor sit amet.</p>
+	<summary>Click me!</summary>
+	<p>Lorem ipsum dolor sit amet.</p>
 </details>
 ```
 
@@ -79,6 +79,7 @@ To learn about other HTML elements and how to write HTML, visit [W3Schools/html]
 ## Themes
 
 You can use custom colors and custom fonts in dev.css through themes. See the `/theme` folder to view some premade ones. You can also copy the `boilerplate.css` and make a theme yourself. Simply apply it after the dev.css stylesheet. For example, to apply the terminal theme, put this after your main stylesheet:
+
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@2/theme/terminal.min.css">
 ```

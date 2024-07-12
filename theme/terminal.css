@@ -3,19 +3,19 @@
 @import url("https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/geist-mono.min.css");
 
 :root {
-  /* Fonts */
-  --dc-font-sans: "Geist Mono", monospace;
-  --dc-font-mono: "Geist Mono", monospace;
-  /* Colors */
-  --dc-tx-1: #ffffff;
-  --dc-tx-2: #eeeeee;
-  --dc-bg-1: #000000;
-  --dc-bg-2: #002700;
-  --dc-bg-3: #005800;
-  --dc-lk-1: #00ff00;
-  --dc-lkb-1: #00ff00;
-  --dc-lkb-2: #00d400;
-  --dc-lkb-tx: #000000;
-  --dc-ac-1: #00ff00;
-  --dc-ac-tx: #000000;
+	/* Fonts */
+	--dc-font-sans: "Geist Mono", monospace;
+	--dc-font-mono: "Geist Mono", monospace;
+	/* Colors */
+	--dc-tx-1: #ffffff;
+	--dc-tx-2: #eeeeee;
+	--dc-bg-1: #000000;
+	--dc-bg-2: #002700;
+	--dc-bg-3: #005800;
+	--dc-lk-1: #00ff00;
+	--dc-lkb-1: #00ff00;
+	--dc-lkb-2: #00d400;
+	--dc-lkb-tx: #000000;
+	--dc-ac-1: #00ff00;
+	--dc-ac-tx: #000000;
 }
