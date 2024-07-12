@@ -22,8 +22,7 @@
 	"files": [
 		"theme",
 		"addon",
-		"demo.html",
-		"dev.css"
+		"demo.html"
 	],
 	"prettier": {
 		"useTabs": true
