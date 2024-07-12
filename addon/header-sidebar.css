@@ -1,4 +1,5 @@
 /* addon for dev.css v3, a classless CSS framework - https://github.com/intergrav/dev.css */
+/* about: turns the header into a sidebar if the viewport is wide enough */
 /* warn: if using with the header-sticky addon, be sure to include this after it */
 
 @media (min-width: calc((48rem + 4rem) + ((16rem)*2))) {

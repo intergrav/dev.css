@@ -1,34 +1,35 @@
 /* dev.css v3, a classless CSS framework - https://github.com/intergrav/dev.css */
+/* about: tiny, simple, classless CSS framework in the style of Vercel's Geist design system */
 
-/* Table of Contents
-   1. Configuration
-   2. Dark Mode Handling
-   3. CSS Reset
-   4. Margins for Most Elements
-   5. Font Family
-   6. Body and Selection Styling
-   7. Typography
-   8. Blockquotes
-   9. Header
-  10. Footer
-  11. Buttons and Inputs
-  12. Code and Keyboards
-  13. Details
-  14. Description Lists
-  15. Horizontal Rules
-  16. Fieldsets
-  17. Tables
-  18. Lists
+/* table of contents
+   1. configuration
+   2. dark mode handling
+   3. css reset
+   4. margins for most elements
+   5. font family
+   6. body and selection styling
+   7. typography
+   8. blockquotes
+   9. header
+  10. footer
+  11. buttons and inputs
+  12. code and keyboards
+  13. details
+  14. description lists
+  15. horizontal rules
+  16. fieldsets
+  17. tables
+  18. lists
 */
 
-/* 1. Configuration */
+/* 1. configuration */
 :root {
-	/* Font families */
+	/* font families */
 	--dc-font-sans: "Geist", "Inter", -apple-system, BlinkMacSystemFont,
 		"Segoe UI", sans-serif;
 	--dc-font-mono: "Geist Mono", monospace;
 
-	/* Light colors */
+	/* light colors */
 	--dc-tx-1: #000000;
 	--dc-tx-2: #1a1a1a;
 	--dc-bg-1: #fafafa;
@@ -41,7 +42,7 @@
 	--dc-ac-1: #8e4ec6;
 	--dc-ac-tx: #ededed;
 
-	/* Dark colors */
+	/* dark colors */
 	--dc-d-tx-1: #ededed;
 	--dc-d-tx-2: #a1a1a1;
 	--dc-d-bg-1: #000;
@@ -55,7 +56,7 @@
 	--dc-d-ac-tx: #ededed;
 }
 
-/* 2. Dark Mode Handling */
+/* 2. dark mode handling */
 @media (prefers-color-scheme: dark) {
 	:root {
 		--dc-tx-1: var(--dc-d-tx-1);
@@ -72,7 +73,7 @@
 	}
 }
 
-/* 3. CSS Reset - cleaned up https://www.joshwcomeau.com/css/custom-css-reset */
+/* 3. css reset - cleaned up https://www.joshwcomeau.com/css/custom-css-reset */
 *,
 *::before,
 *::after {
@@ -106,7 +107,7 @@ select {
 	isolation: isolate;
 }
 
-/* 4. Margins for Most Elements */
+/* 4. margins for most elements */
 address,
 area,
 article,
@@ -140,7 +141,7 @@ video {
 	margin-bottom: 1rem;
 }
 
-/* 5. Font Family */
+/* 5. font family */
 html {
 	font-family: var(--dc-font-sans);
 }
@@ -152,7 +153,7 @@ samp {
 	font-family: var(--dc-font-mono);
 }
 
-/* 6. Body and Selection Styling */
+/* 6. body and selection styling */
 body {
 	margin: 0 auto;
 	max-width: 48rem;
@@ -166,7 +167,7 @@ body {
 	color: var(--dc-ac-tx);
 }
 
-/* 7. Typography */
+/* 7. typography */
 h1,
 h2,
 h3,
@@ -208,7 +209,7 @@ mark {
 	border-radius: 0.25rem;
 }
 
-/* 8. Blockquotes */
+/* 8. blockquotes */
 blockquote {
 	padding: 1.25rem;
 	background: var(--dc-bg-2);
@@ -222,7 +223,7 @@ blockquote *:last-child {
 	margin-bottom: 0;
 }
 
-/* 9. Header */
+/* 9. header */
 header {
 	background: var(--dc-bg-2);
 	border-bottom: 1px solid var(--dc-bg-3);
@@ -288,7 +289,7 @@ header nav ul li:not(:first-child)::before {
 	content: "• ";
 }
 
-/* 10. Footer */
+/* 10. footer */
 footer {
 	border-top: 1px solid var(--dc-bg-3);
 	padding: 0.5rem calc(50vw - 50%);
@@ -308,7 +309,7 @@ footer h3 {
 	border-bottom: 0;
 }
 
-/* 11. Buttons and Inputs */
+/* 11. buttons and inputs */
 a button,
 button,
 input[type="submit"],
@@ -366,7 +367,7 @@ textarea {
 	max-width: 100%;
 }
 
-/* 12. Code and Keyboards */
+/* 12. code and keyboards */
 code,
 samp,
 kbd,
@@ -388,7 +389,7 @@ pre {
 	overflow: auto;
 }
 
-/* 13. Details */
+/* 13. details */
 details {
 	padding: 0.5rem 1rem;
 	background: var(--dc-bg-2);
@@ -415,7 +416,7 @@ details[open] > *:last-child {
 	padding-bottom: 0;
 }
 
-/* 14. Description Lists */
+/* 14. description lists */
 dt {
 	font-weight: bold;
 }
@@ -424,14 +425,14 @@ dd::before {
 	content: "→ ";
 }
 
-/* 15. Horizontal Rules */
+/* 15. horizontal rules */
 hr {
 	border: 0;
 	border-bottom: 1px solid var(--dc-bg-3);
 	margin: 1rem auto;
 }
 
-/* 16. Fieldsets */
+/* 16. fieldsets */
 fieldset {
 	margin-top: 1rem;
 	padding: 2rem;
@@ -443,7 +444,7 @@ legend {
 	padding: auto 0.5rem;
 }
 
-/* 17. Tables */
+/* 17. tables */
 table {
 	border-collapse: collapse;
 	width: 100%;
@@ -469,7 +470,7 @@ table caption {
 	margin-bottom: 0.5rem;
 }
 
-/* 18. Lists */
+/* 18. lists */
 ol,
 ul {
 	padding-left: 2rem;
