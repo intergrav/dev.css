@@ -3,7 +3,6 @@
 /* warn: if using with the header-sticky addon, be sure to include this after it */
 
 @media (min-width: calc((48rem + 4rem) + ((16rem)*2))) {
-	/* unset header */
 	header {
 		all: unset;
 	}

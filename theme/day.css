@@ -2,7 +2,7 @@
 /* about: makes it always light, regardless of device setting */
 
 :root {
-	/* Colors */
+	/* colors */
 	--dc-tx-1: #000000;
 	--dc-tx-2: #1a1a1a;
 	--dc-bg-1: #fafafa;

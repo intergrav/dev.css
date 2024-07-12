@@ -2,7 +2,7 @@
 /* about: makes it always dark, regardless of device setting */
 
 :root {
-	/* Colors */
+	/* colors */
 	--dc-tx-1: #ededed;
 	--dc-tx-2: #a1a1a1;
 	--dc-bg-1: #000;

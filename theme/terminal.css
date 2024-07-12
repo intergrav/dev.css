@@ -4,10 +4,10 @@
 @import url("https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/geist-mono.min.css");
 
 :root {
-	/* Fonts */
+	/* fonts */
 	--dc-font-sans: "Geist Mono", monospace;
 	--dc-font-mono: "Geist Mono", monospace;
-	/* Colors */
+	/* colors */
 	--dc-tx-1: #ffffff;
 	--dc-tx-2: #eeeeee;
 	--dc-bg-1: #000000;

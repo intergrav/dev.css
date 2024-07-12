@@ -2,10 +2,10 @@
 /* about: a template that you can modify */
 
 :root {
-	/* Fonts */
+	/* fonts */
 	--dc-font-sans: sans-serif; /* Sans Serif */
 	--dc-font-mono: monospace; /* Monospace */
-	/* Colors */
+	/* colors */
 	--dc-tx-1: #000000; /* Primary text */
 	--dc-tx-2: #1a1a1a; /* Secondary text */
 	--dc-bg-1: #fafafa; /* Main background */
