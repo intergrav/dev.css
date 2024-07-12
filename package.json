@@ -1,7 +1,7 @@
 {
 	"name": "@intergrav/dev.css",
 	"version": "3.0.0",
-	"description": "Extremely simple, small, classless CSS framework in the style of Vercel's Geist design system",
+	"description": "Tiny, simple, classless CSS framework in the style of Vercel's Geist design system",
 	"author": "intergrav <intergrav@proton.me> (https://intergrav.xyz)",
 	"license": "MIT",
 	"repository": "github:intergrav/dev.css",
