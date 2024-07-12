@@ -1,0 +1,47 @@
+/* theme for dev.css v3, a classless CSS framework - https://github.com/intergrav/dev.css */
+/* about: catppuccin's mocha color scheme - https://github.com/catppuccin */
+/* note: this will use catppuccin latte if the user's device prefers light mode for accessibility and consistency */
+
+:root {
+	/* light colors - latte */
+	--dc-tx-1: #4c4f69; /* primary text | Text */
+	--dc-tx-2: #4c4f69; /* secondary text | Text */
+	--dc-bg-1: #e6e9ef; /* main background | Mantle */
+	--dc-bg-2: #eff1f5; /* secondary background | Base */
+	--dc-bg-3: #ccd0da; /* outlines | Surface0 */
+	--dc-lk-1: #1e66f5; /* link text | Blue */
+	--dc-lkb-1: #bcc0cc; /* link button background | Surface1 */
+	--dc-lkb-2: #ccd0da; /* link button background (hover) | Surface0 */
+	--dc-lkb-tx: #4c4f69; /* link button text | Text */
+	--dc-ac-1: #7c7f931e; /* accent/selection color | Overlay2 + 1e */
+	--dc-ac-tx: #4c4f69; /* accent/selection color text | Text */
+
+	/* dark colors */
+	--dc-d-tx-1: #cdd6f4; /* primary text | Text */
+	--dc-d-tx-2: #cdd6f4; /* secondary text | Text */
+	--dc-d-bg-1: #181825; /* main background | Mantle */
+	--dc-d-bg-2: #1e1e2e; /* secondary background | Base */
+	--dc-d-bg-3: #313244; /* outlines | Surface0 */
+	--dc-d-lk-1: #89b4fa; /* link text | Blue */
+	--dc-d-lkb-1: #45475a; /* link button background | Surface1 */
+	--dc-d-lkb-2: #313244; /* link button background (hover) | Surface0 */
+	--dc-d-lkb-tx: #cdd6f4; /* link button text | Text */
+	--dc-d-ac-1: #9399b21e; /* accent/selection color | Overlay2 + 1e */
+	--dc-d-ac-tx: #cdd6f4; /* accent/selection color text | Text */
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--dc-tx-1: var(--dc-d-tx-1);
+		--dc-tx-2: var(--dc-d-tx-2);
+		--dc-bg-1: var(--dc-d-bg-1);
+		--dc-bg-2: var(--dc-d-bg-2);
+		--dc-bg-3: var(--dc-d-bg-3);
+		--dc-lk-1: var(--dc-d-lk-1);
+		--dc-lkb-1: var(--dc-d-lkb-1);
+		--dc-lkb-2: var(--dc-d-lkb-2);
+		--dc-lkb-tx: var(--dc-d-lkb-tx);
+		--dc-ac-1: var(--dc-d-ac-1);
+		--dc-ac-tx: var(--dc-d-ac-tx);
+	}
+}

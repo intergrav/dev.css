@@ -113,7 +113,7 @@ This turns the header into a sidebar on displays that are wide enough to support
 
 ## Themes
 
-You can use custom colors and custom fonts in dev.css through themes. See the `/theme` folder to view some premade ones. To use a theme, simply apply it after the dev.css stylesheet. For example, to apply the terminal theme, place this after your main stylesheet:
+You can use custom colors and custom fonts in dev.css through themes. See the `/theme` folder to view some premade ones. To use a theme, simply apply it after the dev.css stylesheet. I provide a terminal-like theme, night and day themes, and a set of Catppuccin themes. For example, to apply the terminal theme, place this after your main stylesheet:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@3/theme/terminal.min.css">
