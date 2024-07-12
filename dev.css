@@ -1,5 +1,26 @@
 /* dev.css v3, a classless CSS framework - https://github.com/intergrav/dev.css */
 
+/* Table of Contents
+   1. Configuration
+   2. Dark Mode Handling
+   3. CSS Reset
+   4. Margins for Most Elements
+   5. Font Family
+   6. Body and Selection Styling
+   7. Typography
+   8. Blockquotes
+   9. Header
+  10. Footer
+  11. Buttons and Inputs
+  12. Code and Keyboards
+  13. Details
+  14. Description Lists
+  15. Horizontal Rules
+  16. Fieldsets
+  17. Tables
+  18. Lists
+*/
+
 /* 1. Configuration */
 :root {
 	/* Font families */
@@ -34,7 +55,7 @@
 	--dc-d-ac-tx: #ededed;
 }
 
-/* 2. Dark mode handling */
+/* 2. Dark Mode Handling */
 @media (prefers-color-scheme: dark) {
 	:root {
 		--dc-tx-1: var(--dc-d-tx-1);
@@ -85,7 +106,7 @@ select {
 	isolation: isolate;
 }
 
-/* 4. Margins for most elements */
+/* 4. Margins for Most Elements */
 address,
 area,
 article,
@@ -119,7 +140,7 @@ video {
 	margin-bottom: 1rem;
 }
 
-/* 5. Font family */
+/* 5. Font Family */
 html {
 	font-family: var(--dc-font-sans);
 }
@@ -131,7 +152,7 @@ samp {
 	font-family: var(--dc-font-mono);
 }
 
-/* 6. Body and selection styling */
+/* 6. Body and Selection Styling */
 body {
 	margin: 0 auto;
 	max-width: 48rem;
@@ -279,7 +300,7 @@ footer h3 {
 	border-bottom: 0;
 }
 
-/* 11. Buttons and inputs */
+/* 11. Buttons and Inputs */
 a button,
 button,
 input[type="submit"],
@@ -337,7 +358,7 @@ textarea {
 	max-width: 100%;
 }
 
-/* 12. Code and keyboards */
+/* 12. Code and Keyboards */
 code,
 samp,
 kbd,
@@ -386,7 +407,7 @@ details[open] > *:last-child {
 	padding-bottom: 0;
 }
 
-/* 14. Description lists */
+/* 14. Description Lists */
 dt {
 	font-weight: bold;
 }
@@ -395,7 +416,7 @@ dd::before {
 	content: "→ ";
 }
 
-/* 15. Horizontal rules */
+/* 15. Horizontal Rules */
 hr {
 	border: 0;
 	border-bottom: 1px solid var(--dc-bg-3);
