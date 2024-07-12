@@ -1,55 +1,91 @@
+/* dev.css v3, a classless CSS framework - https://github.com/intergrav/dev.css */
+
+/* 1. Configuration */
 :root {
-  /* Font families - Geist, Inter, Apple default (Gecko and Blink), Microsoft default, browser default */
-  --dc-font-sans: "Geist", "Inter", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
-  --dc-font-mono: "Geist Mono", monospace;
-  /* Light colors */
-  --dc-tx-1: #000000;
-  --dc-tx-2: #1a1a1a;
-  --dc-bg-1: #fafafa;
-  --dc-bg-2: #fff;
-  --dc-bg-3: #ebebeb;
-  --dc-lk-1: #0068d6;
-  --dc-lkb-1: #0072f5;
-  --dc-lkb-2: #0062d1;
-  --dc-lkb-tx: #ededed;
-  --dc-ac-1: #8e4ec6;
-  --dc-ac-tx: #ededed;
-  /* Dark colors */
-  --dc-d-tx-1: #ededed;
-  --dc-d-tx-2: #a1a1a1;
-  --dc-d-bg-1: #000;
-  --dc-d-bg-2: #0a0a0a;
-  --dc-d-bg-3: #2e2e2e;
-  --dc-d-lk-1: #52a8ff;
-  --dc-d-lkb-1: #0072f5;
-  --dc-d-lkb-2: #0062d1;
-  --dc-d-lkb-tx: #ededed;
-  --dc-d-ac-1: #8e4ec6;
-  --dc-d-ac-tx: #ededed;
+	/* Font families */
+	--dc-font-sans: "Geist", "Inter", -apple-system, BlinkMacSystemFont,
+		"Segoe UI", sans-serif;
+	--dc-font-mono: "Geist Mono", monospace;
+
+	/* Light colors */
+	--dc-tx-1: #000000;
+	--dc-tx-2: #1a1a1a;
+	--dc-bg-1: #fafafa;
+	--dc-bg-2: #fff;
+	--dc-bg-3: #ebebeb;
+	--dc-lk-1: #0068d6;
+	--dc-lkb-1: #0072f5;
+	--dc-lkb-2: #0062d1;
+	--dc-lkb-tx: #ededed;
+	--dc-ac-1: #8e4ec6;
+	--dc-ac-tx: #ededed;
+
+	/* Dark colors */
+	--dc-d-tx-1: #ededed;
+	--dc-d-tx-2: #a1a1a1;
+	--dc-d-bg-1: #000;
+	--dc-d-bg-2: #0a0a0a;
+	--dc-d-bg-3: #2e2e2e;
+	--dc-d-lk-1: #52a8ff;
+	--dc-d-lkb-1: #0072f5;
+	--dc-d-lkb-2: #0062d1;
+	--dc-d-lkb-tx: #ededed;
+	--dc-d-ac-1: #8e4ec6;
+	--dc-d-ac-tx: #ededed;
 }
 
+/* 2. Dark mode handling */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --dc-tx-1: var(--dc-d-tx-1);
-    --dc-tx-2: var(--dc-d-tx-2);
-    --dc-bg-1: var(--dc-d-bg-1);
-    --dc-bg-2: var(--dc-d-bg-2);
-    --dc-bg-3: var(--dc-d-bg-3);
-    --dc-lk-1: var(--dc-d-lk-1);
-    --dc-lkb-1: var(--dc-d-lkb-1);
-    --dc-lkb-2: var(--dc-d-lkb-2);
-    --dc-lkb-tx: var(--dc-d-lkb-tx);
-    --dc-ac-1: var(--dc-d-ac-1);
-    --dc-ac-tx: var(--dc-d-ac-tx);
-  }
+	:root {
+		--dc-tx-1: var(--dc-d-tx-1);
+		--dc-tx-2: var(--dc-d-tx-2);
+		--dc-bg-1: var(--dc-d-bg-1);
+		--dc-bg-2: var(--dc-d-bg-2);
+		--dc-bg-3: var(--dc-d-bg-3);
+		--dc-lk-1: var(--dc-d-lk-1);
+		--dc-lkb-1: var(--dc-d-lkb-1);
+		--dc-lkb-2: var(--dc-d-lkb-2);
+		--dc-lkb-tx: var(--dc-d-lkb-tx);
+		--dc-ac-1: var(--dc-d-ac-1);
+		--dc-ac-tx: var(--dc-d-ac-tx);
+	}
 }
 
-* {
-  margin: 0;
-  padding: 0;
+/* 3. CSS Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	word-break: break-word;
 }
 
+body {
+	line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* 4. Margins for most elements */
 address,
 area,
 article,
@@ -80,229 +116,186 @@ table,
 textarea,
 ul,
 video {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
-html,
-input,
-select,
-button {
-  font-family: var(--dc-font-sans);
+/* 5. Font family */
+html {
+	font-family: var(--dc-font-sans);
 }
 
+code,
+pre,
+kbd,
+samp {
+	font-family: var(--dc-font-mono);
+}
+
+/* 6. Body and selection styling */
 body {
-  margin: 0 auto;
-  max-width: 750px;
-  padding: 2rem;
-  border-radius: 4px;
-  overflow-x: hidden;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  background: var(--dc-bg-1);
-  color: var(--dc-tx-2);
-  font-size: 1rem;
-  line-height: 1.5;
+	margin: 0 auto;
+	max-width: 48rem;
+	padding: 2rem;
+	background: var(--dc-bg-1);
+	color: var(--dc-tx-2);
 }
 
 ::selection {
-  background: var(--dc-ac-1);
-  color: var(--dc-ac-tx);
+	background: var(--dc-ac-1);
+	color: var(--dc-ac-tx);
 }
 
+/* 7. Typography */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  line-height: 1;
-  color: var(--dc-tx-1);
-  padding-top: 0.875rem;
+	line-height: 1;
+	color: var(--dc-tx-1);
+	padding-top: 1rem;
 }
 
 h1,
 h2,
 h3 {
-  padding-bottom: 0.3rem;
-  margin-bottom: 0.4rem;
-  border-bottom: 1px solid var(--dc-bg-3);
+	padding-bottom: 0.25rem;
+	margin-bottom: 0.5rem;
+	border-bottom: 1px solid var(--dc-bg-3);
 }
 
 h4,
 h5,
 h6 {
-  margin-bottom: 0.3rem;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.75rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-h5 {
-  font-size: 1rem;
-}
-
-h6 {
-  font-size: 0.875rem;
+	margin-bottom: 0.25rem;
 }
 
 a {
-  color: var(--dc-lk-1);
-  text-decoration: none;
+	color: var(--dc-lk-1);
+	text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
-abbr:hover {
-  cursor: help;
+mark {
+	padding: 0.125rem 0.25rem;
+	background: var(--dc-ac-1);
+	color: var(--dc-ac-tx);
+	border-radius: 0.25rem;
 }
 
+/* 8. Blockquotes */
 blockquote {
-  padding: 1.5rem;
-  background: var(--dc-bg-2);
-  border: 1px solid var(--dc-bg-3);
-  border-left: 5px solid var(--dc-bg-3);
-  border-radius: 4px;
+	padding: 1.25rem;
+	background: var(--dc-bg-2);
+	border: 1px solid var(--dc-bg-3);
+	border-left: 5px solid var(--dc-bg-3);
+	border-radius: 0.25rem;
 }
 
 blockquote *:last-child {
-  padding-bottom: 0;
-  margin-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
-@media (max-width: calc(-1px + (750px + 4rem) + ((275px + 2rem)*2))) {
-  header {
-    background: var(--dc-bg-2);
-    border-bottom: 1px solid var(--dc-bg-3);
-    padding-top: 0.9rem;
-    padding-bottom: 0.6rem;
-    margin: -2rem calc(50% - 50vw) 2rem;
-    padding-left: calc(50vw - 50%);
-    padding-right: calc(50vw - 50%);
-  }
-
-  header nav a + a::before {
-    content: "• ";
-    color: var(--dc-tx-2);
-  }
-
-  header h1 {
-    font-size: 1.6rem;
-  }
-
-  header h2 {
-    font-size: 1.4rem;
-  }
-
-  header h3 {
-    font-size: 1.2rem;
-  }
-
-  header h4 {
-    font-size: 1rem;
-  }
-
-  header h5 {
-    font-size: 0.9rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-
-  header nav {
-    font-size: 0.9rem;
-  }
-
-  header h6 {
-    font-size: 0.8rem;
-  }
-
-  header * {
-    padding-top: 0.15rem;
-    padding-bottom: 0.15rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-  }
-
-  header > *:first-child {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  header > *:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
+/* 9. Header */
+header {
+	background: var(--dc-bg-2);
+	border-bottom: 1px solid var(--dc-bg-3);
+	padding: 0.5rem calc(50vw - 50%);
+	margin: -2rem calc(50% - 50vw) 2rem;
 }
 
-@media (min-width: calc((750px + 4rem) + ((275px + 2rem)*2))) {
-  header {
-    padding: 2rem;
-    padding-right: 0;
-    margin: 0;
-    position: fixed;
-    top: 0;
-    left: calc(50% - ((750px + 4rem) / 2) - (275px + 2rem));
-    width: 275px;
-    height: calc(100% - 1rem);
-    overflow-y: auto;
-  }
+header nav a + a::before {
+	content: "• ";
+	color: var(--dc-tx-2);
+}
 
-  header nav {
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid var(--dc-bg-3);
-    padding-top: 1rem;
-    margin-top: 0.5rem;
-  }
-
-  header nav a::before {
-    content: "• ";
-    color: var(--dc-tx-2);
-  }
+header * {
+	padding-top: 0rem;
+	padding-bottom: 0rem;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
 }
 
 header h1,
 header h2,
-header h3,
-header h4,
-header h5,
-header h6 {
-  border-bottom: 0;
+header h3 {
+	border-bottom: 0;
 }
 
+header h1 {
+	font-size: 1.6rem;
+}
+
+header h2 {
+	font-size: 1.4rem;
+}
+
+header h3 {
+	font-size: 1.2rem;
+}
+
+header h4 {
+	font-size: 1rem;
+}
+
+header h5 {
+	font-size: 0.9rem;
+}
+
+header p {
+	font-size: 1rem;
+}
+
+header nav {
+	font-size: 0.9rem;
+}
+
+header h6 {
+	font-size: 0.8rem;
+}
+
+/* 10. Footer */
+footer {
+	border-top: 1px solid var(--dc-bg-3);
+	padding: 0.5rem calc(50vw - 50%);
+	margin: 2rem calc(50% - 50vw) -2rem;
+}
+
+footer * {
+	padding-top: 0rem;
+	padding-bottom: 0rem;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+
+footer h1,
+footer h2,
+footer h3 {
+	border-bottom: 0;
+}
+
+/* 11. Buttons and inputs */
 a button,
 button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  font-size: 1rem;
-  display: inline-block;
-  padding: 6px 12px;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  background: var(--dc-lkb-1);
-  color: var(--dc-lkb-tx);
-  border: 0;
-  border-radius: 4px;
-  box-sizing: border-box;
-  cursor: pointer;
+	display: inline-block;
+	padding: 0.25rem 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	background: var(--dc-lkb-1);
+	color: var(--dc-lkb-tx);
+	border: 0;
+	border-radius: 0.25rem;
+	box-sizing: border-box;
+	cursor: pointer;
 }
 
 a button[disabled],
@@ -310,8 +303,8 @@ button[disabled],
 input[type="submit"][disabled],
 input[type="reset"][disabled],
 input[type="button"][disabled] {
-  cursor: not-allowed;
-  opacity: 0.5;
+	cursor: not-allowed;
+	opacity: 0.5;
 }
 
 .button:focus,
@@ -324,176 +317,142 @@ input[type="reset"]:focus,
 input[type="reset"]:enabled:hover,
 input[type="button"]:focus,
 input[type="button"]:enabled:hover {
-  background: var(--dc-lkb-2);
+	background: var(--dc-lkb-2);
 }
 
-a img {
-  margin-bottom: 0;
+textarea,
+select,
+input {
+	padding: 0.25rem 0.5rem;
+	margin-bottom: 0.5rem;
+	background: var(--dc-bg-2);
+	color: var(--dc-tx-2);
+	border: 1px solid var(--dc-bg-3);
+	border-radius: 0.25rem;
+	box-shadow: none;
+	box-sizing: border-box;
 }
 
-code,
-pre,
-kbd,
-samp {
-  font-family: var(--dc-font-mono);
+textarea {
+	max-width: 100%;
 }
 
+/* 12. Code and keyboards */
 code,
 samp,
 kbd,
 pre {
-  background: var(--dc-bg-2);
-  border: 1px solid var(--dc-bg-3);
-  border-radius: 4px;
-  padding: 2px 4px;
-  font-size: 0.9rem;
+	background: var(--dc-bg-2);
+	border: 1px solid var(--dc-bg-3);
+	border-radius: 0.25rem;
+	padding: 0.125rem 0.25rem;
+	font-size: 0.9rem;
 }
 
 kbd {
-  border-bottom: 3px solid var(--dc-bg-3);
+	border-bottom: 3px solid var(--dc-bg-3);
 }
 
 pre {
-  padding: 1rem 1.4rem;
-  max-width: 100%;
-  overflow: auto;
+	padding: 1rem 1.5rem;
+	max-width: 100%;
+	overflow: auto;
 }
 
-pre code {
-  background: inherit;
-  font-size: inherit;
-  color: inherit;
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-
-code pre {
-  display: inline;
-  background: inherit;
-  font-size: inherit;
-  color: inherit;
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-
+/* 13. Details */
 details {
-  padding: 0.6rem 1rem;
-  background: var(--dc-bg-2);
-  border: 1px solid var(--dc-bg-3);
-  border-radius: 4px;
+	padding: 0.5rem 1rem;
+	background: var(--dc-bg-2);
+	border: 1px solid var(--dc-bg-3);
+	border-radius: 0.25rem;
 }
 
 summary {
-  cursor: pointer;
-  font-weight: bold;
+	cursor: pointer;
+	font-weight: bold;
 }
 
 details[open] summary {
-  margin-bottom: 8px;
+	margin-bottom: 0.5rem;
 }
 
 details[open] > *:first-child {
-  margin-top: 0;
-  padding-top: 0;
+	margin-top: 0;
+	padding-top: 0;
 }
 
 details[open] > *:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
+/* 14. Description lists */
 dt {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 dd::before {
-  content: "→ ";
+	content: "→ ";
 }
 
+/* 15. Horizontal rules */
 hr {
-  border: 0;
-  border-bottom: 1px solid var(--dc-bg-3);
-  margin: 1rem auto;
+	border: 0;
+	border-bottom: 1px solid var(--dc-bg-3);
+	margin: 1rem auto;
 }
 
+/* 16. Fieldsets */
 fieldset {
-  margin-top: 1rem;
-  padding: 2rem;
-  border: 1px solid var(--dc-bg-3);
-  border-radius: 4px;
+	margin-top: 1rem;
+	padding: 2rem;
+	border: 1px solid var(--dc-bg-3);
+	border-radius: 0.25rem;
 }
 
 legend {
-  padding: auto 0.5rem;
+	padding: auto 0.5rem;
 }
 
+/* 17. Tables */
 table {
-  border-collapse: collapse;
-  width: 100%;
+	border-collapse: collapse;
+	width: 100%;
 }
 
 td,
 th {
-  border: 1px solid var(--dc-bg-3);
-  text-align: left;
-  padding: 0.5rem;
+	border: 1px solid var(--dc-bg-3);
+	text-align: left;
+	padding: 0.5rem;
 }
 
 th {
-  background: var(--dc-bg-2);
+	background: var(--dc-bg-2);
 }
 
 tr:nth-child(even) {
-  background: var(--dc-bg-2);
+	background: var(--dc-bg-2);
 }
 
 table caption {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
 }
 
-textarea {
-  max-width: 100%;
-}
-
+/* 18. Lists */
 ol,
 ul {
-  padding-left: 2rem;
+	padding-left: 2rem;
 }
 
 li {
-  margin-top: 0.4rem;
+	margin-top: 0.4rem;
 }
 
 ul ul,
 ol ul,
 ul ol,
 ol ol {
-  margin-bottom: 0;
-}
-
-mark {
-  padding: 2px 4px;
-  background: var(--dc-ac-1);
-  color: var(--dc-ac-tx);
-  border-radius: 4px;
-}
-
-textarea,
-select,
-input {
-  padding: 6px 12px;
-  margin-bottom: 0.5rem;
-  background: var(--dc-bg-2);
-  color: var(--dc-tx-2);
-  border: 1px solid var(--dc-bg-3);
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
+	margin-bottom: 0;
 }
