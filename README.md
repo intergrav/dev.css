@@ -6,6 +6,16 @@ Tiny, simple, classless CSS framework in the style of Vercel's [Geist](https://v
 
 The minified stylesheet weighs only **~4.8kb** and can make any plain HTML file look clean and modern. It also has a light and dark theme.
 
+<details>
+<summary>Preview</summary>
+
+<img src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/desktop-dark.png" alt="dev.css desktop demo, dark mode">
+<img src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/desktop-light.png" alt="dev.css desktop demo, light mode">
+<img height="748px" src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/mobile-dark.png" alt="dev.css mobile demo, dark mode">
+<img height="748px" src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/mobile-light.png" alt="dev.css mobile demo, dark mode">
+
+</details>
+
 ## Importing
 
 In your HTML's `<head>` all you have to write is this, and you're done! (`.min` means to minify the file)
