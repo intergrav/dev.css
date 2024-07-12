@@ -32,7 +32,7 @@ I also recommend adding a font through [intergrav/fonts](https://github.com/inte
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/geist.min.css">
 ```
 
-Recommended, monospace variant:
+Recommended monospace variant:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/geist-mono.min.css">
@@ -60,7 +60,7 @@ Optionally, you could add a `<p>` tag after the `<h1>` tag if you want to give a
 
 ### Footer
 
-Optionally, use the `<footer>` tag to create a large footer for your page. Only use this at the bottom of your `<body>`, or else it may look wonky. You can add whatever content in here that you'd like.
+Optionally, use the `<footer>` tag to create a footer for your page. Only use this at the bottom of your `<body>`, or else it may look wonky. You can add whatever content in here that you'd like.
 
 ### Text
 
@@ -90,6 +90,26 @@ The `<details>` element can make a toggle-able dropdown without using any JavaSc
 ### More
 
 To learn about other HTML elements and how to write HTML, visit [W3Schools/html](https://www.w3schools.com/html/).
+
+## Addons
+
+dev.css at the minimum is very basic. Addons are small CSS snippets that adjust or add on to the functionality of dev.css, based on what you want for your users. Examples include turning the header into a sidebar, or making the header sticky. If you are adding an addon, it must be added **after** the main dev.css file. You might also need order them in a specific way to make it work. Here are a few built-in addons.
+
+### `header-sticky.css`
+
+This makes the header sticky - always at the top of the screen. Keep in mind that I do not recommend using this if your header is large, as it could affect usability of your site since it'll always be onscreen and will take up a lot of space. Only use it if your header is small, e.g. only contains a one-line `<h1>` and `<nav>`.
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@3/addon/header-sticky.min.css">
+```
+
+### `header-sidebar.css`
+
+This turns the header into a sidebar on displays that are wide enough to support it. It will list the navigation out vertically in this mode. It will responsively turn back into the default state if the viewport is too thin to contain everything. If you are using this with `header-sticky.css`, be sure to add it **after** that rather than before. To import it, add this line after `dev.css`:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@3/addon/header-sidebar.min.css">
+```
 
 ## Themes
 

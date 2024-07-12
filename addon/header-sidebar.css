@@ -1,0 +1,35 @@
+/* addon for dev.css v3, a classless CSS framework - https://github.com/intergrav/dev.css */
+/* warn: if using with the header-sticky addon, be sure to include this after it */
+
+@media (min-width: calc((48rem + 4rem) + ((16rem)*2))) {
+	/* unset header */
+	header {
+		all: unset;
+	}
+
+	header {
+		padding: 3rem 2rem;
+		padding-right: 0;
+		position: fixed;
+		top: 0;
+		left: calc(50% - ((48rem + 4rem) / 2) - (16rem));
+		width: 16rem;
+		height: calc(100% - 6rem);
+		overflow-y: auto;
+	}
+
+	header nav ul {
+		padding-left: 1rem;
+		border-top: 1px solid var(--dc-bg-3);
+		padding-top: 1rem;
+		margin-top: 1rem;
+	}
+
+	header nav ul li {
+		display: list-item;
+	}
+
+	header nav ul li:not(:first-child)::before {
+		content: unset;
+	}
+}

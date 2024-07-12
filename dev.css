@@ -275,6 +275,19 @@ header h6 {
 	font-size: 0.8rem;
 }
 
+header nav ul {
+	padding: 0;
+}
+
+header nav ul li {
+	display: inline-block;
+	margin: 0;
+}
+
+header nav ul li:not(:first-child)::before {
+	content: "• ";
+}
+
 /* 10. Footer */
 footer {
 	border-top: 1px solid var(--dc-bg-3);

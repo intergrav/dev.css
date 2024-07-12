@@ -1,0 +1,8 @@
+/* addon for dev.css v3, a classless CSS framework - https://github.com/intergrav/dev.css */
+/* warn: if using with the header-sidebar addon, be sure to include this before it */
+/* warn: i do not recommend using this if your header is large, may affect usability */
+
+header {
+	position: sticky;
+	top: 0;
+}
