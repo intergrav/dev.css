@@ -45,6 +45,10 @@ If you need a navigation bar, you can add a `<nav>` with `<a>` links inside it. 
 
 Optionally, you could add a `<p>` tag after the `<h1>` tag if you want to give a description of the page the user is currently on.
 
+### Footer
+
+Optionally, use the `<footer>` tag to create a large header for your page. Only use this at the bottom of your `<body>`, or else it may look wonky. You can add whatever content in here that you'd like.
+
 ### Text
 
 Wrap all body text in `<p>` tags, unless it's the sole child of another element. If you want to write quotes, you can use the `<blockquote>` tag. To highlight text, wrap it in the `<mark>` tag. Want to show code? Use `<code>` for short inline code. Use `<pre>` for code blocks. Use `<kbd>` for keyboard input.
