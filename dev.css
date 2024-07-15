@@ -2,7 +2,7 @@
 /* about: tiny, simple, classless CSS framework in the style of Vercel's Geist design system */
 
 /* table of contents
-	1. configuration
+	1. default configuration
 	2. dark mode handling
 	3. root color scheme
 	4. css reset
@@ -23,7 +23,7 @@
 	19. lists
 */
 
-/* 1. configuration */
+/* 1. default configuration */
 :root {
 	/* font families */
 	--dc-font-sans: "Geist", "Inter", -apple-system, BlinkMacSystemFont,
@@ -376,6 +376,11 @@ input {
 
 textarea {
 	max-width: 100%;
+}
+
+input,
+progress {
+	accent-color: var(--dc-ac-1);
 }
 
 /* 13. code and keyboards */
