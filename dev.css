@@ -29,6 +29,9 @@
 		"Segoe UI", sans-serif;
 	--dc-font-mono: "Geist Mono", monospace;
 
+	/* color scheme for inputs */
+	--dc-cs: light;
+
 	/* light colors */
 	--dc-tx-1: #000000;
 	--dc-tx-2: #1a1a1a;
@@ -70,6 +73,9 @@
 		--dc-lkb-tx: var(--dc-d-lkb-tx);
 		--dc-ac-1: var(--dc-d-ac-1);
 		--dc-ac-tx: var(--dc-d-ac-tx);
+
+		/* color scheme for inputs */
+		--dc-cs: dark;
 	}
 }
 
@@ -363,6 +369,7 @@ input {
 	border-radius: 0.25rem;
 	box-shadow: none;
 	box-sizing: border-box;
+	color-scheme: var(--dc-cs);
 }
 
 textarea {
