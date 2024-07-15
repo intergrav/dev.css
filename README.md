@@ -2,73 +2,45 @@
 
 [![NPM Version](https://img.shields.io/npm/v/@intergrav/dev.css)](https://www.npmjs.com/package/@intergrav/dev.css) [![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/@intergrav/dev.css)](https://cdn.jsdelivr.net/npm/@intergrav/dev.css/) [![GitHub Repo stars](https://img.shields.io/github/stars/intergrav/dev.css)](https://github.com/intergrav/dev.css)
 
-Tiny, simple, classless CSS framework in the style of Vercel's [Geist](https://vercel.com/geist) design system. Inspired by [xz/new.css](https://github.com/xz/new.css).
-
-The minified stylesheet weighs only **~4.8kb** and can make any plain HTML file look clean and modern. It also has a light and dark theme.
+Tiny, simple, classless CSS framework inspired by Vercel's [Geist](https://vercel.com/geist) design system. It is designed to make any plain HTML file look clean and modern. The minified stylesheet weighs only **~4.8kb** and includes both light and dark themes.
 
 <details>
-<summary>Preview</summary>
-
+<summary>Click to view preview</summary>
 <img src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/desktop-light.png" alt="dev.css desktop demo, light mode">
 <img src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/desktop-dark.png" alt="dev.css desktop demo, dark mode">
 <img height="748px" src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/mobile-light.png" alt="dev.css mobile demo, dark mode">
 <img height="748px" src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/mobile-dark.png" alt="dev.css mobile demo, dark mode">
-
 </details>
 
 ## Importing
 
-In your HTML's `<head>` all you have to write is this, and you're done! (`.min` means to minify the file)
+To use dev.css in your HTML, simply add the following line to the `<head>` section of your HTML file:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@3">
 ```
 
-I also recommend adding a font through [intergrav/fonts](https://github.com/intergrav/fonts). Geist or Inter work with dev.css out of the box. It will use the default system/browser san-serif fonts if those are not available.
-
-### Geist Font
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/geist.min.css">
-```
-
-Recommended monospace variant:
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/geist-mono.min.css">
-```
-
-### Inter Font
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/inter.min.css">
-```
+You can also add a font from [intergrav/fonts](https://github.com/intergrav/fonts#readme) to improve the experience, however it will increase the website download size. Geist and Inter fonts work with dev.css out of the box, other fonts will require a theme to be used. If these fonts are not available, the default system/browser sans-serif and monospace fonts will be used, such as Microsoft's Segoe UI or Apple's San Francisco.
 
 ## Elements
 
-dev.css takes advantage of semantic HTML elements. Here are some guidelines on how these should be used for the best results.
+dev.css takes advantage of semantic HTML elements. Here are some guidelines on how to use them for the best results.
 
 ### Header
 
-Use the `<header>` tag to create a large header for your page. Only use this at the very top of your `<body>`, or else it may look wonky.
-
-For the title, the header should contain an `<h1>` tag. You can also add an `<h4>` tag before the `<h1>` tag if you want to show extra information.
-
-If you need a navigation bar, you can add a `<nav>` with a `<ul>` that has `<li>` items with `<a>` links inside them. See the `demo.html` for an example. dev.css will automatically lay these out horizontally, with dividing bullet points between them. If you are using the `header-sidebar.css` addon, these items will lay out vertically when in sidebar mode.
-
-Optionally, you could add a `<p>` tag after the `<h1>` tag if you want to give a description of the page the user is currently on.
+Use the `<header>` tag to create a large header for your page. Place it at the very top of your `<body>`. For the title, use an `<h1>` tag. You can also add an optional `<h4>` tag before the `<h1>` tag to provide extra information. If you need a navigation bar, add a `<nav>` element with a `<ul>` that contains `<li>` items with `<a>` links. dev.css will automatically lay out the navigation items horizontally, with dividing bullet points between them. If you are using the `header-sidebar.css` addon, the navigation items will be laid out vertically when in sidebar mode. Optionally, you can add a `<p>` tag after the `<h1>` tag to provide a description of the current page.
 
 ### Footer
 
-Optionally, use the `<footer>` tag to create a footer for your page. Only use this at the bottom of your `<body>`, or else it may look wonky. You can add whatever content in here that you'd like.
+Optionally, use the `<footer>` tag to create a footer for your page. Place it at the bottom of your `<body>`. You can add any content you like inside the footer.
 
 ### Text
 
-Wrap all body text in `<p>` tags, unless it's the sole child of another element. If you want to write quotes, you can use the `<blockquote>` tag. To highlight text, wrap it in the `<mark>` tag. Want to show code? Use `<code>` for short inline code. Use `<pre>` for code blocks. Use `<kbd>` for keyboard input.
+Wrap all body text in `<p>` tags, unless it's the sole child of another element. Use the `<blockquote>` tag for quotes. To highlight text, wrap it in the `<mark>` tag. For code, use `<code>` for short inline code snippets and `<pre>` for code blocks. Use `<kbd>` for keyboard input.
 
 ### Button
 
-For a link button, you can wrap the button in an `<a>` tag. Here's a code example:
+To create a link button, wrap the button in an `<a>` tag. Here's an example:
 
 ```html
 <a href="https://example.com">
@@ -78,7 +50,7 @@ For a link button, you can wrap the button in an `<a>` tag. Here's a code exampl
 
 ### Details
 
-The `<details>` element can make a toggle-able dropdown without using any JavaScript. Here's a code example:
+The `<details>` element can be used to create a toggle-able dropdown without using any JavaScript. Here's an example:
 
 ```html
 <details>
@@ -93,11 +65,11 @@ To learn about other HTML elements and how to write HTML, visit [W3Schools/html]
 
 ## Addons
 
-dev.css at the minimum is very basic. Addons are small CSS snippets that adjust or add on to the functionality of dev.css, based on what you want for your users. Examples include turning the header into a sidebar, or making the header sticky. If you are adding an addon, it must be added **after** the main dev.css file. You might also need order them in a specific way to make it work. Here are a few built-in addons.
+dev.css provides a basic set of styles. Addons are small CSS snippets that can be used to adjust or add functionality to dev.css based on your needs. If you are adding an addon, make sure to include it **after** the main dev.css file. Here are a few built-in addons.
 
 ### `header-sticky.css`
 
-This makes the header sticky - always at the top of the screen. Keep in mind that I do not recommend using this if your header is large, as it could affect usability of your site since it'll always be onscreen and will take up a lot of space. Only use it if your header is small, e.g. only contains a one-line `<h1>` and `<nav>`.
+This addon makes the header sticky, always staying at the top of the screen. Note that this addon is recommended for small headers, as it may affect the usability of your site if the header is large and takes up a lot of space. To use this addon, add the following line after the `dev.css` import:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@3/addon/header-sticky.min.css">
@@ -105,7 +77,7 @@ This makes the header sticky - always at the top of the screen. Keep in mind tha
 
 ### `header-sidebar.css`
 
-This turns the header into a sidebar on displays that are wide enough to support it. It will list the navigation out vertically in this mode. It will responsively turn back into the default state if the viewport is too thin to contain everything. If you are using this with `header-sticky.css`, be sure to add it **after** that rather than before. To import it, add this line after `dev.css`:
+This addon turns the header into a sidebar on wide displays. The navigation items are listed vertically in this mode. The sidebar will responsively switch back to the default state if the viewport is too narrow to contain everything. If you are using this addon with `header-sticky.css`, make sure to include it **after** the `header-sticky.css` import. To use this addon, add the following line after the `dev.css` import:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@3/addon/header-sidebar.min.css">
@@ -113,10 +85,14 @@ This turns the header into a sidebar on displays that are wide enough to support
 
 ## Themes
 
-You can use custom colors and custom fonts in dev.css through themes. See the `/theme` folder to view some premade ones. To use a theme, simply apply it after the dev.css stylesheet. I provide a terminal-like theme, night and day themes, and a set of Catppuccin themes. For example, to apply the terminal theme, place this after your main stylesheet:
+dev.css supports custom colors and fonts through themes. You can find some pre-made themes in the `/theme` folder. To use a theme, simply apply it after the dev.css stylesheet. There are themes inspired by terminals, night and day themes, and a set of Catppuccin themes. For example, to apply the terminal theme, add the following line after the `dev.css` import:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@3/theme/terminal.min.css">
 ```
 
-If you're making a theme, I highly recommend using the `boilerplate-auto.css` template rather than the `boilerplate.css` template for accessibility reasons.
+If you are creating a custom theme, it is recommended to use the `boilerplate-auto.css` template for better accessibility.
+
+## Credits
+
+- [xz/new.css](https://github.com/xz/new.css) is the main inspiration for this project
