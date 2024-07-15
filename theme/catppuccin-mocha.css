@@ -14,11 +14,11 @@
 	--dc-lkb-1: #bcc0cc; /* link button background | Surface1 */
 	--dc-lkb-2: #ccd0da; /* link button background (hover) | Surface0 */
 	--dc-lkb-tx: #4c4f69; /* link button text | Text */
-	--dc-ac-1: #7c7f931e; /* accent/selection color | Overlay2 + 1e */
-	--dc-ac-tx: #4c4f69; /* accent/selection color text | Text */
+	--dc-ac-1: #8839ef; /* accent color | Mauve */
+	--dc-ac-tx: #eff1f5; /* accent color text | Base */
 
 	/* dark colors */
-	--dc-cs: dark;
+	--dc-d-cs: dark;
 	--dc-d-tx-1: #cdd6f4; /* primary text | Text */
 	--dc-d-tx-2: #cdd6f4; /* secondary text | Text */
 	--dc-d-bg-1: #181825; /* main background | Mantle */
@@ -28,8 +28,8 @@
 	--dc-d-lkb-1: #45475a; /* link button background | Surface1 */
 	--dc-d-lkb-2: #313244; /* link button background (hover) | Surface0 */
 	--dc-d-lkb-tx: #cdd6f4; /* link button text | Text */
-	--dc-d-ac-1: #9399b21e; /* accent/selection color | Overlay2 + 1e */
-	--dc-d-ac-tx: #cdd6f4; /* accent/selection color text | Text */
+	--dc-d-ac-1: #cba6f7; /* accent color | Mauve */
+	--dc-d-ac-tx: #1e1e2e; /* accent color text | Base */
 }
 
 @media (prefers-color-scheme: dark) {
