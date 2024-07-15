@@ -160,6 +160,7 @@ body {
 	padding: 2rem;
 	background: var(--dc-bg-1);
 	color: var(--dc-tx-2);
+	overflow-x: hidden;
 }
 
 ::selection {
