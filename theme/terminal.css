@@ -9,6 +9,7 @@
 	--dc-font-mono: "Geist Mono", monospace;
 
 	/* colors */
+	--dc-cs: dark;
 	--dc-tx-1: #ffffff;
 	--dc-tx-2: #eeeeee;
 	--dc-bg-1: #000000;

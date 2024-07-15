@@ -3,6 +3,7 @@
 
 :root {
 	/* colors */
+	--dc-cs: dark;
 	--dc-tx-1: #ededed;
 	--dc-tx-2: #a1a1a1;
 	--dc-bg-1: #000;

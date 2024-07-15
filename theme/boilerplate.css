@@ -8,6 +8,7 @@
 	--dc-font-mono: monospace; /* monospace */
 
 	/* colors */
+	--dc-cs: light; /* light/dark scrollbars, inputs, etc */
 	--dc-tx-1: #000000; /* primary text */
 	--dc-tx-2: #1a1a1a; /* secondary text */
 	--dc-bg-1: #fafafa; /* main background */

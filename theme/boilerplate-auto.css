@@ -8,6 +8,7 @@
 	--dc-font-mono: monospace; /* monospace */
 
 	/* light colors */
+	--dc-cs: light; /* light/dark scrollbars, inputs, etc */
 	--dc-tx-1: #000000; /* primary text */
 	--dc-tx-2: #1a1a1a; /* secondary text */
 	--dc-bg-1: #fafafa; /* main background */
@@ -21,6 +22,7 @@
 	--dc-ac-tx: #ededed; /* accent color text */
 
 	/* dark colors */
+	--dc-cs: dark;
 	--dc-d-tx-1: #ededed;
 	--dc-d-tx-2: #a1a1a1;
 	--dc-d-bg-1: #000;
@@ -36,6 +38,7 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
+		--dc-cs: var(--dc-d-cs);
 		--dc-tx-1: var(--dc-d-tx-1);
 		--dc-tx-2: var(--dc-d-tx-2);
 		--dc-bg-1: var(--dc-d-bg-1);
