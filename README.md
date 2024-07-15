@@ -36,7 +36,7 @@ Optionally, use the `<footer>` tag to create a footer for your page. Place it at
 
 ### Text
 
-Wrap all body text in `<p>` tags, unless it's the sole child of another element. Use the `<blockquote>` tag for quotes. To highlight text, wrap it in the `<mark>` tag. For code, use `<code>` for short inline code snippets and `<pre>` for code blocks. Use `<kbd>` for keyboard input.
+Wrap all body text in `<p>` tags, unless it's the sole child of another element. Use the `<blockquote>` tag for quotes. To highlight text, wrap it in the `<mark>` tag. For code, use `<code>` for short inline code snippets and wrap that with `<pre>` for code blocks. Use `<kbd>` for keyboard input.
 
 ### Button
 

@@ -393,6 +393,7 @@ pre {
 	border-radius: 0.25rem;
 	padding: 0.125rem 0.25rem;
 	font-size: 0.9rem;
+	tab-size: 2;
 }
 
 kbd {
@@ -403,6 +404,11 @@ pre {
 	padding: 1rem 1.5rem;
 	max-width: 100%;
 	overflow: auto;
+}
+
+pre code {
+	padding: 0;
+	border: 0;
 }
 
 /* 14. details */
