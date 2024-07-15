@@ -2,12 +2,6 @@
 	"name": "@intergrav/dev.css",
 	"version": "3.1.2",
 	"description": "Tiny, simple, classless CSS framework in the style of Vercel's Geist design system",
-	"author": "intergrav <intergrav@proton.me> (https://intergrav.xyz)",
-	"license": "MIT",
-	"repository": "github:intergrav/dev.css",
-	"bugs": {
-		"url": "https://github.com/intergrav/dev.css/issues"
-	},
 	"keywords": [
 		"css",
 		"stylesheet",
@@ -16,14 +10,22 @@
 		"minimal",
 		"lightweight",
 		"vercel",
-		"geist"
+		"geist",
+		"open-source"
 	],
-	"main": "dev.css",
+	"homepage": "https://github.com/intergrav/dev.css#readme",
+	"bugs": {
+		"url": "https://github.com/intergrav/dev.css/issues"
+	},
+	"license": "MIT",
+	"author": "intergrav <intergrav@proton.me> (https://intergrav.xyz)",
 	"files": [
 		"theme",
 		"addon",
 		"demo.html"
 	],
+	"main": "dev.css",
+	"repository": "github:intergrav/dev.css",
 	"prettier": {
 		"useTabs": true
 	}
