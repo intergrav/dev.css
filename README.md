@@ -28,7 +28,11 @@ dev.css takes advantage of semantic HTML elements. Here are some guidelines on h
 
 ### Header
 
-Use the `<header>` tag to create a large header for your page. Place it at the very top of your `<body>`. For the title, use an `<h1>` tag. You can also add an optional `<h4>` tag before the `<h1>` tag to provide extra information. If you need a navigation bar, add a `<nav>` element with a `<ul>` that contains `<li>` items with `<a>` links. dev.css will automatically lay out the navigation items horizontally, with dividing bullet points between them. If you are using the `header-sidebar.css` addon, the navigation items will be laid out vertically when in sidebar mode. Optionally, you can add a `<p>` tag after the `<h1>` tag to provide a description of the current page.
+Use the `<header>` tag to create a large header for your page. Place it at the very top of your `<body>`. For the title, use an `<h1>` tag. You can also add an optional `<h4>` tag before the `<h1>` tag to provide extra information. 
+
+If you need a navigation bar, add a `<nav>` element with a `<ul>` that contains `<li>` items with `<a>` links. dev.css will automatically lay out the navigation items horizontally, with dividing bullet points between them. If you are using the `header-sidebar.css` addon, the navigation items will be laid out vertically when in sidebar mode. 
+
+Optionally, you can add a `<p>` tag after the `<h1>` tag to provide a description of the current page.
 
 ### Footer
 
