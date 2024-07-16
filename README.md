@@ -65,7 +65,7 @@ To learn about other HTML elements and how to write HTML, visit [W3Schools/html]
 
 ## Addons
 
-dev.css provides a basic set of styles. Addons are small CSS snippets that can be used to adjust or add functionality to dev.css based on your needs. If you are adding an addon, make sure to include it **after** the main dev.css file. Here are a few built-in addons.
+dev.css provides a basic set of styles. Addons are small CSS or JS snippets that can be used to adjust or add functionality to dev.css based on your needs. Here are the built-in addons.
 
 ### `header-sticky.css`
 
@@ -89,6 +89,16 @@ This addon turns the header into a sidebar on wide displays. The navigation item
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@3/addon/header-sidebar.min.css">
+```
+
+### `scroll-to-top.js`
+
+This addon creates a small "scroll to top" button in the bottom right corner of your website when the user scrolls down. The button uses the default dev.css button style. The button is slightly opaque so that you can see it but it doesn't block the view. To use this addon, add the following line after the `dev.css` import:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@3/addon/scroll-to-top.min.js" defer></script>
+```
+
 ```
 
 ## Themes
