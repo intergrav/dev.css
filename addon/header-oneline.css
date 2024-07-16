@@ -1,0 +1,50 @@
+/* addon for dev.css v3, a classless CSS framework - https://github.com/intergrav/dev.css */
+/* about: everything in the header on one line, works well with addon/header-sticky.css */
+/* warn: if using with the header-sidebar addon, be sure to include this before it */
+/* warn: i do not recommend using this if you have p or multiple nav elements in header */
+
+header {
+	align-items: center;
+	display: flex;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6 {
+	white-space: nowrap;
+}
+
+header * {
+	margin: 0;
+	line-height: 1.5;
+}
+
+header h1,
+header p {
+	margin-right: 1rem;
+}
+
+header h2,
+header h3,
+header h4,
+header h5,
+header h6 {
+	color: var(--dc-tx-2);
+	font-weight: normal;
+}
+
+header h2::after,
+header h3::after,
+header h4::after,
+header h5::after,
+header h6::after {
+	content: "/";
+}
+
+/* make sure that all header elements have same font size */
+header * {
+	font-size: 1rem !important;
+}

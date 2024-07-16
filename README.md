@@ -75,9 +75,17 @@ This addon makes the header sticky, always staying at the top of the screen. Not
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@3/addon/header-sticky.min.css">
 ```
 
+### `header-oneline.css`
+
+This addon lays everything out in the header horizontally. This is ideal if you don't have much in your header and you want it to be more compact. It works great with `header-sticky.css`. I do not recommend adding `<p>` or more than one `<nav>` element in the header if you're using this. To use this addon, add the following line after the `dev.css` import:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@3/addon/header-oneline.min.css">
+```
+
 ### `header-sidebar.css`
 
-This addon turns the header into a sidebar on wide displays. The navigation items are listed vertically in this mode. The sidebar will responsively switch back to the default state if the viewport is too narrow to contain everything. If you are using this addon with `header-sticky.css`, make sure to include it **after** the `header-sticky.css` import. To use this addon, add the following line after the `dev.css` import:
+This addon turns the header into a sidebar on wide displays. The navigation items are listed vertically in this mode. The sidebar will responsively switch back to the default state if the viewport is too narrow to contain everything. If you are using this addon with `header-sticky.css` or `header-oneline.css`, make sure to import it **after** those. To use this addon, add the following line after the `dev.css` import:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@3/addon/header-sidebar.min.css">

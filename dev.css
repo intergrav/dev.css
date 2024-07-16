@@ -179,6 +179,35 @@ body {
 }
 
 /* 8. typography */
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.17rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+h5 {
+	font-size: 0.83rem;
+}
+
+h6 {
+	font-size: 0.67rem;
+}
+
+p,
+a {
+	font-size: 1rem;
+}
+
 h1,
 h2,
 h3,
@@ -234,7 +263,7 @@ blockquote *:last-child {
 	margin-bottom: 0;
 }
 
-/* 10. header */
+/* 10. header - make sure header addons dont break when modifying */
 header {
 	background: var(--dc-bg-2);
 	border-bottom: 1px solid var(--dc-bg-3);
