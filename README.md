@@ -99,8 +99,6 @@ This addon creates a small "scroll to top" button in the bottom right corner of 
 <script src="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@3/addon/scroll-to-top.min.js" defer></script>
 ```
 
-```
-
 ## Themes
 
 dev.css supports custom colors and fonts through themes. You can find some pre-made themes in the `/theme` folder. To use a theme, simply apply it after the dev.css stylesheet. There are themes inspired by terminals, night and day themes, and a set of Catppuccin themes. For example, to apply the terminal theme, add the following line after the `dev.css` import:
