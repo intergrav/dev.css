@@ -38,7 +38,7 @@
 		content: unset;
 	}
 
-	/* hacky: reset font sizes to defaults */
+	/* hacky: reset stuff to default incase you are using header-oneline.css */
 	h1 {
 		font-size: 2rem !important;
 	}
@@ -69,7 +69,6 @@
 		font-size: 1rem !important;
 	}
 
-	/* hacky: reset some other stuff to default incase you are using header-oneline.css */
 	header h2 header h3,
 	header h4,
 	header h5,
