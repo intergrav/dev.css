@@ -301,15 +301,7 @@ header nav ul li:not(:first-child)::before {
 /* 11. footer */
 footer {
 	border-top: 1px solid var(--dc-bg-3);
-	padding: 0.5rem calc(50vw - 50%);
-	margin: 2rem calc(50% - 50vw) -2rem;
-}
-
-footer * {
-	padding-top: 0rem;
-	padding-bottom: 0rem;
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
+	padding-top: 0.5rem;
 }
 
 footer h1,
