@@ -285,38 +285,6 @@ header h3 {
 	border-bottom: 0;
 }
 
-header h1 {
-	font-size: 1.6rem;
-}
-
-header h2 {
-	font-size: 1.4rem;
-}
-
-header h3 {
-	font-size: 1.2rem;
-}
-
-header h4 {
-	font-size: 1rem;
-}
-
-header h5 {
-	font-size: 0.9rem;
-}
-
-header p {
-	font-size: 1rem;
-}
-
-header nav {
-	font-size: 0.9rem;
-}
-
-header h6 {
-	font-size: 0.8rem;
-}
-
 header nav ul {
 	padding: 0;
 }
