@@ -303,6 +303,7 @@ header nav ul li:not(:first-child)::before {
 footer {
 	border-top: 1px solid var(--dc-bg-3);
 	padding-top: 0.5rem;
+	margin-top: 0.5rem;
 }
 
 footer h1,
