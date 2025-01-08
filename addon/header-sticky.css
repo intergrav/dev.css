@@ -1,9 +1,17 @@
-/* addon for dev.css v3, a classless CSS framework - https://github.com/intergrav/dev.css */
-/* about: makes the header sticky, always at the top of the screen */
-/* warn: if using with the header-sidebar addon, be sure to include this before it */
-/* warn: i do not recommend using this if your header is large. may affect usability */
+/* header-sticky for dev.css v4, a lightweight CSS framework - https://github.com/intergrav/dev.css */
+/* about: makes the header sticky (when vh>24rem/vw>16rem). useful if the user needs to access nav often */
+/* note: large sticky headers are bad for usability. too large? try header-oneline addon */
 
-header {
-	position: sticky;
-	top: 0;
+@media only screen and (min-height: 24rem) and (min-width: 16rem) {
+	header {
+		position: sticky;
+		top: 0;
+		background-color: var(--dc-bg-2);
+	}
+	@supports (backdrop-filter: blur(24px)) {
+		header {
+			backdrop-filter: blur(24px);
+			background: none;
+		}
+	}
 }

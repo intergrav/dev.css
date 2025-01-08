@@ -1,0 +1,26 @@
+/* ==userstyle==
+@name         night for dev.css
+@description  dev.css theme that makes it always dark mode regardless of device setting
+@namespace    intergrav
+@version      1.0.0
+@author       intergrav <intergrav@proton.me> (https://github.com/intergrav)
+@homepageURL  https://github.com/intergrav/dev.css
+@supportURL   https://github.com/intergrav/dev.css/issues
+@license      MIT
+==/userstyle== */
+
+:root {
+	/* colors */
+	--dc-cs: dark;
+	--dc-tx-1: #ededed;
+	--dc-tx-2: #a1a1a1;
+	--dc-bg-1: #0a0a0a;
+	--dc-bg-2: #000;
+	--dc-bg-3: #2e2e2e;
+	--dc-lk-1: #47a8ff;
+	--dc-lkb-1: #006efe;
+	--dc-lkb-2: #005be7;
+	--dc-lkb-tx: #fff;
+	--dc-ac-1: #9440d5;
+	--dc-ac-tx: #fff;
+}

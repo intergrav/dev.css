@@ -1,50 +1,22 @@
-/* addon for dev.css v3, a classless CSS framework - https://github.com/intergrav/dev.css */
-/* about: everything in the header on one line, works well with addon/header-sticky.css */
-/* warn: if using with the header-sidebar addon, be sure to include this before it */
-/* warn: i do not recommend using this if you have p or multiple nav elements in header */
+/* header-oneline for dev.css v4, a lightweight CSS framework - https://github.com/intergrav/dev.css */
+/* about: makes the header much more compact by sorting horizontally, good with header-sticky addon */
+/* note: will hide most elements in header other than img, h1-6, nav, and button */
+
+header * {
+	font-size: 1rem;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0 !important;
+}
 
 header {
-	align-items: center;
 	display: flex;
+	gap: 1rem;
+	padding: 0.75rem calc(50vw - 50%);
+	margin: 0 calc(50% - 50vw) 0;
 }
 
-header h1,
-header h2,
-header h3,
-header h4,
-header h5,
-header h6 {
-	white-space: nowrap;
-}
-
-header * {
-	margin: 0;
-	line-height: 1.5;
-}
-
-header h1,
-header p {
-	margin-right: 1rem;
-}
-
-header h2,
-header h3,
-header h4,
-header h5,
-header h6 {
-	color: var(--dc-tx-2);
-	font-weight: normal;
-}
-
-header h2::after,
-header h3::after,
-header h4::after,
-header h5::after,
-header h6::after {
-	content: "/";
-}
-
-/* make sure that all header elements have same font size */
-header * {
-	font-size: 1rem !important;
+header > *:not(img, h1, h2, h3, h4, h5, h6, nav, button) {
+	display: none;
 }

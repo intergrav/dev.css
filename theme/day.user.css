@@ -1,0 +1,26 @@
+/* ==userstyle==
+@name         day for dev.css
+@description  dev.css theme that makes it always light mode regardless of device setting
+@namespace    intergrav
+@version      1.0.0
+@author       intergrav <intergrav@proton.me> (https://github.com/intergrav)
+@homepageURL  https://github.com/intergrav/dev.css
+@supportURL   https://github.com/intergrav/dev.css/issues
+@license      MIT
+==/userstyle== */
+
+:root {
+	/* colors */
+	--dc-cs: light;
+	--dc-tx-1: #171717;
+	--dc-tx-2: #666;
+	--dc-bg-1: #fff;
+	--dc-bg-2: #fafafa;
+	--dc-bg-3: #ebebeb;
+	--dc-lk-1: #005ff2;
+	--dc-lkb-1: #006bff;
+	--dc-lkb-2: #0059ec;
+	--dc-lkb-tx: #fff;
+	--dc-ac-1: #a000f8;
+	--dc-ac-tx: #fff;
+}

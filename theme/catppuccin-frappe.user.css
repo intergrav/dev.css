@@ -1,0 +1,56 @@
+/* ==userstyle==
+@name         catppuccin frappé and latte for dev.css
+@description  dev.css theme based on catppuccin's frappé and latte colors - https://github.com/catppuccin
+@namespace    intergrav
+@version      1.0.0
+@author       intergrav <intergrav@proton.me> (https://github.com/intergrav)
+@homepageURL  https://github.com/intergrav/dev.css
+@supportURL   https://github.com/intergrav/dev.css/issues
+@license      MIT
+==/userstyle== */
+
+:root {
+	/* light colors - latte */
+	--dc-cs: light;
+	--dc-tx-1: #4c4f69; /* primary text | Text */
+	--dc-tx-2: #4c4f69; /* secondary text | Text */
+	--dc-bg-1: #eff1f5; /* primary background | Base */
+	--dc-bg-2: #e6e9ef; /* secondary background | Mantle */
+	--dc-bg-3: #ccd0da; /* border | Surface0 */
+	--dc-lk-1: #1e66f5; /* link text | Blue */
+	--dc-lkb-1: #bcc0cc; /* link button | Surface1 */
+	--dc-lkb-2: #ccd0da; /* link button hover | Surface0 */
+	--dc-lkb-tx: #4c4f69; /* text over link button | Text */
+	--dc-ac-1: #8839ef; /* accent color | Mauve */
+	--dc-ac-tx: #eff1f5; /* text over accent color | Base */
+
+	--dc-d-cs: dark;
+	--dc-d-tx-1: #c6d0f5; /* primary text | Text */
+	--dc-d-tx-2: #c6d0f5; /* secondary text | Text */
+	--dc-d-bg-1: #303446; /* primary background | Base */
+	--dc-d-bg-2: #292c3c; /* secondary background | Mantle */
+	--dc-d-bg-3: #414559; /* border | Surface0 */
+	--dc-d-lk-1: #8caaee; /* link text | Blue */
+	--dc-d-lkb-1: #51576d; /* link button | Surface1 */
+	--dc-d-lkb-2: #414559; /* link button hover | Surface0 */
+	--dc-d-lkb-tx: #c6d0f5; /* text over link button | Text */
+	--dc-d-ac-1: #ca9ee6; /* accent color | Mauve */
+	--dc-d-ac-tx: #303446; /* text over accent color | Base */
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--dc-cs: var(--dc-d-cs);
+		--dc-tx-1: var(--dc-d-tx-1);
+		--dc-tx-2: var(--dc-d-tx-2);
+		--dc-bg-1: var(--dc-d-bg-1);
+		--dc-bg-2: var(--dc-d-bg-2);
+		--dc-bg-3: var(--dc-d-bg-3);
+		--dc-lk-1: var(--dc-d-lk-1);
+		--dc-lkb-1: var(--dc-d-lkb-1);
+		--dc-lkb-2: var(--dc-d-lkb-2);
+		--dc-lkb-tx: var(--dc-d-lkb-tx);
+		--dc-ac-1: var(--dc-d-ac-1);
+		--dc-ac-tx: var(--dc-d-ac-tx);
+	}
+}
