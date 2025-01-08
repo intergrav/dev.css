@@ -1,67 +1,72 @@
-/* dev.css v3, a classless CSS framework - https://github.com/intergrav/dev.css */
+/* dev.css v4, a lightweight CSS framework - https://github.com/intergrav/dev.css */
 /* about: tiny, simple, classless CSS framework in the style of Vercel's Geist design system */
 
-/* table of contents
-	1. default configuration
-	2. dark mode handling
-	3. root color scheme
-	4. css reset
-	5. margins for most elements
-	6. font family
-	7. body and selection styling
-	8. typography
-	9. blockquotes
-	10. header
-	11. footer
-	12. buttons and inputs
-	13. code and keyboards
-	14. details
-	15. description lists
-	16. horizontal rules
-	17. fieldsets
-	18. tables
-	19. lists
+/* todo for v4 release
+	- finish dev.css-docs and move demo to that site
+	- update dev.css preview images
 */
 
-/* 1. default configuration */
+/* table of contents
+	1. configurable variables
+	2. dark mode variables
+	3. color scheme
+	4. css reset
+	5. margins for most elements
+	6. typography
+	7. document
+	8. header
+	9. footer
+	10. blockquotes
+	11. buttons and inputs
+	12. code and keyboards
+	13. details
+	14. description lists
+	15. horizontal rules
+	16. fieldsets
+	17. tables
+	18. lists
+*/
+
+/* 1. configurable variables */
+/* adjustable by you! see ./theme/boilerplate-auto.css */
 :root {
 	/* font families */
-	--dc-font-sans: "Geist", "Inter", system-ui, -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-		sans-serif;
-	--dc-font-mono: "Geist Mono", ui-monospace, Consolas, Monaco, "Ubuntu Mono",
-		"Liberation Mono", "Courier New", Courier, monospace;
+	--dc-font: "Geist", "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	--dc-font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Consolas,
+		"Liberation Mono", Menlo, monospace;
 
 	/* light colors */
-	--dc-cs: light;
-	--dc-tx-1: #000000;
-	--dc-tx-2: #1a1a1a;
-	--dc-bg-1: #fafafa;
-	--dc-bg-2: #fff;
-	--dc-bg-3: #ebebeb;
-	--dc-lk-1: #0068d6;
-	--dc-lkb-1: #0072f5;
-	--dc-lkb-2: #0062d1;
-	--dc-lkb-tx: #ededed;
-	--dc-ac-1: #8e4ec6;
-	--dc-ac-tx: #ededed;
+	--dc-cs: light; /* light/dark scrollbars, inputs, etc */
+	--dc-tx-1: #171717; /* primary text */
+	--dc-tx-2: #666; /* secondary text */
+	--dc-bg-1: #fff; /* primary background */
+	--dc-bg-2: #fafafa; /* secondary background */
+	--dc-bg-3: #ebebeb; /* border */
+	--dc-lk-1: #005ff2; /* link text */
+	--dc-lkb-1: #006bff; /* link button */
+	--dc-lkb-2: #0059ec; /* link button hover */
+	--dc-lkb-tx: #fff; /* text over link button */
+	--dc-ac-1: #a000f8; /* accent color */
+	--dc-ac-tx: #fff; /* text over accent color */
 
 	/* dark colors */
 	--dc-d-cs: dark;
 	--dc-d-tx-1: #ededed;
 	--dc-d-tx-2: #a1a1a1;
-	--dc-d-bg-1: #000;
-	--dc-d-bg-2: #0a0a0a;
+	--dc-d-bg-1: #0a0a0a;
+	--dc-d-bg-2: #000;
 	--dc-d-bg-3: #2e2e2e;
-	--dc-d-lk-1: #52a8ff;
-	--dc-d-lkb-1: #0072f5;
-	--dc-d-lkb-2: #0062d1;
-	--dc-d-lkb-tx: #ededed;
-	--dc-d-ac-1: #8e4ec6;
-	--dc-d-ac-tx: #ededed;
+	--dc-d-lk-1: #47a8ff;
+	--dc-d-lkb-1: #006efe;
+	--dc-d-lkb-2: #005be7;
+	--dc-d-lkb-tx: #fff;
+	--dc-d-ac-1: #9440d5;
+	--dc-d-ac-tx: #fff;
 }
 
-/* 2. dark mode handling */
+/* 2. dark mode variables */
+/* adjusts variables if the user's browser prefers dark mode */
 @media (prefers-color-scheme: dark) {
 	:root {
 		--dc-cs: var(--dc-d-cs);
@@ -79,22 +84,20 @@
 	}
 }
 
-/* 3. root color scheme */
+/* 3. color scheme */
+/* adjusts browser color scheme based on variable */
 :root {
 	color-scheme: only var(--dc-cs);
 }
 
-/* 4. css reset - cleaned up https://www.joshwcomeau.com/css/custom-css-reset */
+/* 4. css reset */
+/* modified from https://www.joshwcomeau.com/css/custom-css-reset */
+
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 	margin: 0;
-	word-break: break-word;
-}
-
-body {
-	line-height: 1.5;
 }
 
 img,
@@ -111,6 +114,28 @@ button,
 textarea,
 select {
 	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
 }
 
 #root,
@@ -130,10 +155,13 @@ details,
 dl,
 fieldset,
 figure,
+footer,
 form,
+hr,
 input,
 iframe,
 img,
+main,
 meter,
 nav,
 ol,
@@ -152,9 +180,12 @@ video {
 	margin-bottom: 1rem;
 }
 
-/* 6. font family */
-html {
-	font-family: var(--dc-font-sans);
+/* 6. typography */
+
+body {
+	font-family: var(--dc-font);
+	color: var(--dc-tx-2);
+	line-height: 1.5;
 }
 
 code,
@@ -162,52 +193,7 @@ pre,
 kbd,
 samp {
 	font-family: var(--dc-font-mono);
-}
-
-/* 7. body and selection styling */
-body {
-	margin: 0 auto;
-	max-width: 48rem;
-	padding: 2rem;
-	background: var(--dc-bg-1);
-	color: var(--dc-tx-2);
-	overflow-wrap: break-word;
-	overflow-x: hidden;
-}
-
-::selection {
-	background: var(--dc-ac-1);
-	color: var(--dc-ac-tx);
-}
-
-/* 8. typography */
-h1 {
-	font-size: 2rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-}
-
-h3 {
-	font-size: 1.17rem;
-}
-
-h4 {
-	font-size: 1rem;
-}
-
-h5 {
-	font-size: 0.83rem;
-}
-
-h6 {
-	font-size: 0.67rem;
-}
-
-p,
-a {
-	font-size: 1rem;
+	font-size: 0.9rem;
 }
 
 h1,
@@ -216,17 +202,24 @@ h3,
 h4,
 h5,
 h6 {
-	line-height: 1;
 	color: var(--dc-tx-1);
-	padding-top: 1rem;
+	line-height: 1;
+	padding-top: 0.5rem;
 }
 
 h1,
 h2,
 h3 {
-	padding-bottom: 0.25rem;
 	margin-bottom: 0.5rem;
+	padding-bottom: 0.25rem;
 	border-bottom: 1px solid var(--dc-bg-3);
+}
+
+article h1,
+article h2,
+article h3 {
+	padding-bottom: none;
+	border-bottom: none;
 }
 
 h4,
@@ -245,45 +238,104 @@ a:hover {
 }
 
 mark {
+	border-radius: 0.375rem;
 	padding: 0.125rem 0.25rem;
 	background: var(--dc-ac-1);
 	color: var(--dc-ac-tx);
+}
+
+::selection {
+	background: var(--dc-ac-1);
+	color: var(--dc-ac-tx);
+}
+
+/* 7. document */
+
+body {
+	max-width: 48rem;
+	margin: 0 auto;
+	padding: 0 1rem;
+	background: var(--dc-bg-2);
+	overflow-x: hidden;
+}
+
+main,
+aside {
+	padding: 1.5rem;
+	background: var(--dc-bg-1);
+	border: 1px solid var(--dc-bg-3);
 	border-radius: 0.25rem;
 }
 
-/* 9. blockquotes */
-blockquote {
-	padding: 1.25rem;
+article {
+	padding: 1rem;
 	background: var(--dc-bg-2);
 	border: 1px solid var(--dc-bg-3);
-	border-left: 5px solid var(--dc-bg-3);
-	border-radius: 0.25rem;
+	border-radius: 0.375rem;
 }
 
-blockquote *:last-child {
-	padding-bottom: 0;
+article > *:last-child,
+aside > *:last-child,
+main > *:last-child {
 	margin-bottom: 0;
 }
 
-/* 10. header - make sure header addons dont break when modifying */
+@media only screen and (max-width: 48rem) {
+	main {
+		margin: -1rem;
+		margin-bottom: 0rem;
+		background: none;
+		border: none;
+	}
+
+	aside {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	header {
+		background-color: var(--dc-bg-1);
+		border-bottom: 1px solid var(--dc-bg-3);
+	}
+}
+
+aside h1,
+aside h2,
+aside h3 {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+@media only screen and (min-width: 82rem) {
+	aside {
+		position: absolute;
+		left: calc(50% - ((48rem) / 2) - (16rem));
+		width: 16rem;
+		overflow-y: auto;
+	}
+}
+
+/* 8. header */
+
 header {
-	background: var(--dc-bg-2);
-	border-bottom: 1px solid var(--dc-bg-3);
-	padding: 0.5rem calc(50vw - 50%);
-	margin: -2rem calc(50% - 50vw) 2rem;
+	padding: 1rem calc(50vw - 50%);
+	margin: 0 calc(50% - 50vw) 0;
 }
 
 header * {
-	padding-top: 0rem;
-	padding-bottom: 0rem;
-	margin-top: 0.25rem;
+	padding: 0;
+	margin: 0;
+}
+
+header > *:not(:last-child) {
 	margin-bottom: 0.25rem;
 }
 
 header h1,
 header h2,
 header h3 {
-	border-bottom: 0;
+	border-bottom: none;
+	padding-bottom: 0;
 }
 
 header nav ul {
@@ -299,19 +351,47 @@ header nav ul li:not(:first-child)::before {
 	content: "• ";
 }
 
-/* 11. footer */
-footer {
-	border-top: 1px solid var(--dc-bg-3);
-	padding-top: 0.5rem;
+@media only screen and (max-width: 48rem) {
+	main,
+	aside {
+		padding: 1rem;
+	}
 }
 
-footer h1,
-footer h2,
-footer h3 {
-	border-bottom: 0;
+/* 9. footer */
+
+footer > *:last-child {
+	margin-bottom: 0;
 }
 
-/* 12. buttons and inputs */
+footer nav ul {
+	padding: 0;
+}
+
+footer nav ul li {
+	display: inline-block;
+	margin: 0;
+}
+
+footer nav ul li:not(:first-child)::before {
+	content: "• ";
+}
+
+/* 10. blockquotes */
+blockquote {
+	padding: 1.25rem;
+	background: var(--dc-bg-2);
+	border: 1px solid var(--dc-bg-3);
+	border-left: 5px solid var(--dc-bg-3);
+	border-radius: 0.375rem;
+}
+
+blockquote > *:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+/* 11. buttons and inputs */
 a button,
 button,
 input[type="submit"],
@@ -325,7 +405,7 @@ input[type="button"] {
 	background: var(--dc-lkb-1);
 	color: var(--dc-lkb-tx);
 	border: 0;
-	border-radius: 0.25rem;
+	border-radius: 0.375rem;
 	box-sizing: border-box;
 	cursor: pointer;
 }
@@ -360,7 +440,7 @@ input {
 	background: var(--dc-bg-2);
 	color: var(--dc-tx-2);
 	border: 1px solid var(--dc-bg-3);
-	border-radius: 0.25rem;
+	border-radius: 0.375rem;
 	box-shadow: none;
 	box-sizing: border-box;
 }
@@ -374,16 +454,15 @@ progress {
 	accent-color: var(--dc-ac-1);
 }
 
-/* 13. code and keyboards */
+/* 12. code and keyboards */
 code,
 samp,
 kbd,
 pre {
 	background: var(--dc-bg-2);
 	border: 1px solid var(--dc-bg-3);
-	border-radius: 0.25rem;
+	border-radius: 0.375rem;
 	padding: 0.125rem 0.25rem;
-	font-size: 0.9rem;
 	tab-size: 2;
 }
 
@@ -402,12 +481,12 @@ pre code {
 	border: 0;
 }
 
-/* 14. details */
+/* 13. details */
 details {
 	padding: 0.5rem 1rem;
 	background: var(--dc-bg-2);
 	border: 1px solid var(--dc-bg-3);
-	border-radius: 0.25rem;
+	border-radius: 0.375rem;
 }
 
 summary {
@@ -429,7 +508,7 @@ details[open] > *:last-child {
 	padding-bottom: 0;
 }
 
-/* 15. description lists */
+/* 14. description lists */
 dt {
 	font-weight: bold;
 }
@@ -438,26 +517,25 @@ dd::before {
 	content: "→ ";
 }
 
-/* 16. horizontal rules */
+/* 15. horizontal rules */
 hr {
 	border: 0;
-	border-bottom: 1px solid var(--dc-bg-3);
-	margin: 1rem auto;
+	border-bottom: 2px solid var(--dc-bg-3);
 }
 
-/* 17. fieldsets */
+/* 16. fieldsets */
 fieldset {
 	margin-top: 1rem;
 	padding: 2rem;
 	border: 1px solid var(--dc-bg-3);
-	border-radius: 0.25rem;
+	border-radius: 0.375rem;
 }
 
 legend {
 	padding: auto 0.5rem;
 }
 
-/* 18. tables */
+/* 17. tables */
 table {
 	border-collapse: collapse;
 	width: 100%;
@@ -483,7 +561,7 @@ table caption {
 	margin-bottom: 0.5rem;
 }
 
-/* 19. lists */
+/* 18. lists */
 ol,
 ul {
 	padding-left: 2rem;

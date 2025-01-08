@@ -1,0 +1,31 @@
+/* ==userstyle==
+@name         terminal for dev.css
+@description  dev.css theme that has a similar look to a computer terminal
+@namespace    intergrav
+@version      1.0.0
+@author       intergrav <intergrav@proton.me> (https://github.com/intergrav)
+@homepageURL  https://github.com/intergrav/dev.css
+@supportURL   https://github.com/intergrav/dev.css/issues
+@license      MIT
+==/userstyle== */
+
+:root {
+	/* font families */
+	--dc-font: var(--dc-font-mono);
+	--dc-font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Consolas,
+		"Liberation Mono", Menlo, monospace;
+
+	/* colors */
+	--dc-cs: dark;
+	--dc-tx-1: #ffffff;
+	--dc-tx-2: #eeeeee;
+	--dc-bg-1: #001a00;
+	--dc-bg-2: #000;
+	--dc-bg-3: #005800;
+	--dc-lk-1: #00ff00;
+	--dc-lkb-1: #00ff00;
+	--dc-lkb-2: #00d400;
+	--dc-lkb-tx: #000;
+	--dc-ac-1: #00ff00;
+	--dc-ac-tx: #000;
+}

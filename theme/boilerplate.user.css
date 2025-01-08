@@ -1,0 +1,32 @@
+/* ==userstyle==
+@name         boilerplate for dev.css
+@description  a template that you can modify. copied from dev.css defaults. you can remove lines that you want to keep as the dev.css default, such as the font lines
+@namespace    author
+@version      1.0.0
+@author       author <author@example.com> (https://example.com)
+@homepageURL  https://example.com
+@supportURL   https://example.com/issues
+@license      MIT
+==/userstyle== */
+
+:root {
+	/* font families */
+	--dc-font: "Geist", "Inter", system-ui, "Segoe UI", Roboto, Helvetica,
+		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	--dc-font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Consolas,
+		"Liberation Mono", Menlo, monospace;
+
+	/* light colors */
+	--dc-cs: light; /* light/dark for scrollbars, inputs, etc */
+	--dc-tx-1: #171717; /* primary text */
+	--dc-tx-2: #666; /* secondary text */
+	--dc-bg-1: #fff; /* primary background */
+	--dc-bg-2: #fafafa; /* secondary background */
+	--dc-bg-3: #ebebeb; /* border */
+	--dc-lk-1: #005ff2; /* link text */
+	--dc-lkb-1: #006bff; /* link button */
+	--dc-lkb-2: #0059ec; /* link button hover */
+	--dc-lkb-tx: #fff; /* text over link button */
+	--dc-ac-1: #a000f8; /* accent color */
+	--dc-ac-tx: #fff; /* text over accent color */
+}

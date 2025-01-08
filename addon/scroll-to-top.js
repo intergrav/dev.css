@@ -1,4 +1,4 @@
-/* addon for dev.css v3, a classless CSS framework - https://github.com/intergrav/dev.css */
+/* scroll-to-top for dev.css v4, a lightweight CSS framework - https://github.com/intergrav/dev.css */
 /* about: shows a "scroll to top" button in the bottom right corner of the screen when scrolling */
 
 const scrollToTopButton = document.createElement("button");
@@ -12,6 +12,7 @@ Object.assign(scrollToTopButton.style, {
 	right: "1rem",
 	width: "2.5rem",
 	height: "2.5rem",
+	"border-radius": "1.25rem",
 });
 document.body.appendChild(scrollToTopButton);
 

@@ -1,0 +1,63 @@
+/* ==userstyle==
+@name         boilerplate-auto for dev.css
+@description  a template that you can modify, but with two color schemes for light/dark mode. copied from dev.css defaults. you can remove lines that you want to keep as the dev.css default, such as the font lines
+@namespace    author
+@version      1.0.0
+@author       author <author@example.com> (https://example.com)
+@homepageURL  https://example.com
+@supportURL   https://example.com/issues
+@license      MIT
+==/userstyle== */
+
+:root {
+	/* font families */
+	--dc-font: "Geist", "Inter", system-ui, "Segoe UI", Roboto, Helvetica,
+		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	--dc-font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Consolas,
+		"Liberation Mono", Menlo, monospace;
+
+	/* light colors */
+	--dc-cs: light; /* light/dark for scrollbars, inputs, etc */
+	--dc-tx-1: #171717; /* primary text */
+	--dc-tx-2: #666; /* secondary text */
+	--dc-bg-1: #fff; /* primary background */
+	--dc-bg-2: #fafafa; /* secondary background */
+	--dc-bg-3: #ebebeb; /* border */
+	--dc-lk-1: #005ff2; /* link text */
+	--dc-lkb-1: #006bff; /* link button */
+	--dc-lkb-2: #0059ec; /* link button hover */
+	--dc-lkb-tx: #fff; /* text over link button */
+	--dc-ac-1: #a000f8; /* accent color */
+	--dc-ac-tx: #fff; /* text over accent color */
+
+	/* dark colors */
+	--dc-d-cs: dark;
+	--dc-d-tx-1: #ededed;
+	--dc-d-tx-2: #a1a1a1;
+	--dc-d-bg-1: #0a0a0a;
+	--dc-d-bg-2: #000;
+	--dc-d-bg-3: #2e2e2e;
+	--dc-d-lk-1: #47a8ff;
+	--dc-d-lkb-1: #006efe;
+	--dc-d-lkb-2: #005be7;
+	--dc-d-lkb-tx: #fff;
+	--dc-d-ac-1: #9440d5;
+	--dc-d-ac-tx: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--dc-cs: var(--dc-d-cs);
+		--dc-tx-1: var(--dc-d-tx-1);
+		--dc-tx-2: var(--dc-d-tx-2);
+		--dc-bg-1: var(--dc-d-bg-1);
+		--dc-bg-2: var(--dc-d-bg-2);
+		--dc-bg-3: var(--dc-d-bg-3);
+		--dc-lk-1: var(--dc-d-lk-1);
+		--dc-lkb-1: var(--dc-d-lkb-1);
+		--dc-lkb-2: var(--dc-d-lkb-2);
+		--dc-lkb-tx: var(--dc-d-lkb-tx);
+		--dc-ac-1: var(--dc-d-ac-1);
+		--dc-ac-tx: var(--dc-d-ac-tx);
+	}
+}
