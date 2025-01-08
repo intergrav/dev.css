@@ -92,7 +92,7 @@ For your main content, or the actual content of the page, it is heavily recommen
 
 ### Sidebar
 
-Optionally, you can add a sidebar to your page for pretty much anything you'd like. A good usage for this could be, for example, complex navigation on a docs website, where you wouldn't be able to fit it all into the header. The sidebar will sort normally with the rest of the content on smaller screens. To make a header, place an `<aside>` tag. You must put it above the `<main>` content. Here's an example:
+Optionally, you can add a sidebar to your page for pretty much anything you'd like. A good usage for this could be, for example, complex navigation on a docs website, where you wouldn't be able to fit it all into the header. The sidebar will sort normally with the rest of the content on smaller screens. To make a sidebar, place an `<aside>` tag. You must put it above the `<main>` content. Here's an example:
 
 ```html
 <aside>
