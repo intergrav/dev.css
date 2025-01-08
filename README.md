@@ -4,6 +4,8 @@
 
 dev.css is a tiny, simple, classless CSS framework inspired by Vercel's [Geist](https://vercel.com/geist) design system. It is designed to make any plain HTML file look clean and modern. The minified stylesheet weighs only **~5.9kb** and includes both light and dark themes.
 
+You can find the website at <a href="https://devcss.devins.page">devcss.devins.page</a>, which contains a demo page.
+
 <details>
 <summary>Click to view preview</summary>
 <img src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/desktop-light.png" alt="dev.css desktop demo, light mode">
@@ -21,9 +23,7 @@ dev.css is a great choice for:
 - Collecting your most used links
 - Prototyping your raw HTML
 
-dev.css was not meant for very complex websites.
-
-An example of a site that uses dev.css is [SkywardMC's wiki](https://skywardmc.org).
+dev.css was not meant for very complex websites. An example of a site that uses dev.css is [SkywardMC's wiki](https://skywardmc.org).
 
 ## Importing
 
