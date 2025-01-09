@@ -313,7 +313,7 @@ aside h3 {
 	header {
 		background-color: var(--dc-bg-1);
 		border-bottom: 1px solid var(--dc-bg-3);
-		margin: 0rem calc(50% - 50vw) 1rem !important;
+		margin: 0rem calc(50% - 50vw) 1rem;
 	}
 
 	main,
