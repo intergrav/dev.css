@@ -2,7 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/@intergrav/dev.css)](https://www.npmjs.com/package/@intergrav/dev.css) [![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/@intergrav/dev.css)](https://cdn.jsdelivr.net/npm/@intergrav/dev.css/) [![Discord](https://img.shields.io/discord/1262738186338308126?logo=discord&logoColor=%23fff&color=%235865F2)](https://discord.gg/m5tUgaM3uK) [![GitHub Repo stars](https://img.shields.io/github/stars/intergrav/dev.css)](https://github.com/intergrav/dev.css)
 
-dev.css is a tiny, simple, classless CSS framework inspired by Vercel's [Geist](https://vercel.com/geist) design system. It is designed to make any plain HTML file look clean and modern. The minified stylesheet weighs only **~5.9kb** and includes both light and dark themes.
+dev.css is a tiny, simple, classless CSS framework inspired by Vercel's [Geist](https://vercel.com/geist) design system. It is designed to make any plain HTML file look clean and modern. The minified stylesheet weighs only **~5.5kb** and includes both light and dark themes.
 
 You can find the website at <a href="https://devcss.devins.page">devcss.devins.page</a>, which contains a demo page.
 
