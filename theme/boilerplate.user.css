@@ -11,13 +11,13 @@
 
 :root {
 	/* font families */
-	--dc-font: "Geist", "Inter", system-ui, "Segoe UI", Roboto, Helvetica,
-		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	--dc-font: "Geist", "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 	--dc-font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Consolas,
 		"Liberation Mono", Menlo, monospace;
 
-	/* light colors */
-	--dc-cs: light; /* light/dark for scrollbars, inputs, etc */
+	/* colors */
+	--dc-cs: light; /* light/dark scrollbars, inputs, etc */
 	--dc-tx-1: #171717; /* primary text */
 	--dc-tx-2: #666; /* secondary text */
 	--dc-bg-1: #fff; /* primary background */
