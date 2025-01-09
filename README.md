@@ -8,10 +8,10 @@ You can find the website at <a href="https://devcss.devins.page">devcss.devins.p
 
 <details>
 <summary>Click to view preview</summary>
-<img src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/desktop-light.png" alt="dev.css desktop demo, light mode">
-<img src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/desktop-dark.png" alt="dev.css desktop demo, dark mode">
-<img height="748px" src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/mobile-light.png" alt="dev.css mobile demo, dark mode">
-<img height="748px" src="https://raw.githubusercontent.com/intergrav/branding/main/dev.css/preview/mobile-dark.png" alt="dev.css mobile demo, dark mode">
+<img src=".github/static/preview-desktop-light.png" alt="dev.css desktop demo, light mode">
+<img src=".github/static/preview-desktop-dark.png" alt="dev.css desktop demo, dark mode">
+<img height="748px" src=".github/static/preview-mobile-light.png" alt="dev.css mobile demo, light mode">
+<img height="748px" src=".github/static/preview-mobile-dark.png" alt="dev.css mobile demo, dark mode">
 </details>
 
 ## Who is this for?
