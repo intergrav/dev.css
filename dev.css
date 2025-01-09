@@ -300,7 +300,6 @@ aside h3 {
 @media only screen and (max-width: 48rem) {
 	main {
 		margin: -1rem;
-		margin-bottom: 0rem;
 		background: none;
 		border: none;
 	}
@@ -308,7 +307,13 @@ aside h3 {
 	header {
 		background-color: var(--dc-bg-1);
 		border-bottom: 1px solid var(--dc-bg-3);
-		margin: 0rem calc(50% - 50vw) 1rem;
+		margin-bottom: 1rem;
+	}
+
+	footer {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid var(--dc-bg-3);
 	}
 
 	main,
