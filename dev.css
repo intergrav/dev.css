@@ -13,17 +13,15 @@
 	4. margins for most elements
 	5. typography
 	6. document
-	7. header
-	8. footer
-	9. blockquotes
-	10. buttons and inputs
-	11. code and keyboards
-	12. details
-	13. description lists
-	14. horizontal rules
-	15. fieldsets
-	16. tables
-	17. lists
+	7. blockquotes
+	8 buttons and inputs
+	9. code and keyboards
+	10. details
+	11. description lists
+	12. horizontal rules
+	13. fieldsets
+	14. tables
+	15. lists
 */
 
 /* 1. configurable variables */
@@ -225,67 +223,9 @@ body {
 	overflow-x: hidden;
 }
 
-main,
-aside {
-	padding: 1.5rem;
-	background: var(--dc-bg-1);
-	border: 1px solid var(--dc-bg-3);
-	border-radius: 0.25rem;
-}
-
-article {
-	padding: 1rem;
-	background: var(--dc-bg-2);
-	border: 1px solid var(--dc-bg-3);
-	border-radius: 0.375rem;
-}
-
-article > *:last-child,
-aside > *:last-child,
-main > *:last-child {
-	margin-bottom: 0;
-}
-
-@media only screen and (max-width: 48rem) {
-	main {
-		margin: -1rem;
-		margin-bottom: 0rem;
-		background: none;
-		border: none;
-	}
-
-	aside {
-		margin-top: 1rem;
-		margin-bottom: 1rem;
-	}
-
-	header {
-		background-color: var(--dc-bg-1);
-		border-bottom: 1px solid var(--dc-bg-3);
-	}
-}
-
-aside h1,
-aside h2,
-aside h3 {
-	padding-bottom: 0;
-	border-bottom: none;
-}
-
-@media only screen and (min-width: 82rem) {
-	aside {
-		position: absolute;
-		left: calc(50% - ((48rem) / 2) - (16rem));
-		width: 16rem;
-		overflow-y: auto;
-	}
-}
-
-/* 7. header */
-
 header {
 	padding: 1rem calc(50vw - 50%);
-	margin: 0rem calc(50% - 50vw) 1rem;
+	margin: 0rem calc(50% - 50vw) 0rem;
 }
 
 header * {
@@ -317,15 +257,6 @@ header nav ul li:not(:first-child)::before {
 	content: "• ";
 }
 
-@media only screen and (max-width: 48rem) {
-	main,
-	aside {
-		padding: 1rem;
-	}
-}
-
-/* 8. footer */
-
 footer > *:last-child {
 	margin-bottom: 0;
 }
@@ -343,7 +274,64 @@ footer nav ul li:not(:first-child)::before {
 	content: "• ";
 }
 
-/* 9. blockquotes */
+main,
+aside {
+	padding: 1.5rem;
+	background: var(--dc-bg-1);
+	border: 1px solid var(--dc-bg-3);
+	border-radius: 0.25rem;
+}
+
+article {
+	padding: 1rem;
+	background: var(--dc-bg-2);
+	border: 1px solid var(--dc-bg-3);
+	border-radius: 0.375rem;
+}
+
+article > *:last-child,
+aside > *:last-child,
+main > *:last-child {
+	margin-bottom: 0;
+}
+
+aside h1,
+aside h2,
+aside h3 {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+@media only screen and (max-width: 48rem) {
+	main {
+		margin: -1rem;
+		margin-bottom: 0rem;
+		background: none;
+		border: none;
+	}
+
+	header {
+		background-color: var(--dc-bg-1);
+		border-bottom: 1px solid var(--dc-bg-3);
+		margin: 0rem calc(50% - 50vw) 1rem !important;
+	}
+
+	main,
+	aside {
+		padding: 1rem;
+	}
+}
+
+@media only screen and (min-width: 82rem) {
+	aside {
+		position: absolute;
+		left: calc(50% - ((48rem) / 2) - (16rem));
+		width: 16rem;
+		overflow-y: auto;
+	}
+}
+
+/* 7. blockquotes */
 blockquote {
 	padding: 1.25rem;
 	background: var(--dc-bg-2);
@@ -357,7 +345,7 @@ blockquote > *:last-child {
 	margin-bottom: 0;
 }
 
-/* 10. buttons and inputs */
+/* 8. buttons and inputs */
 a button,
 button,
 input[type="submit"],
@@ -420,7 +408,7 @@ progress {
 	accent-color: var(--dc-ac-1);
 }
 
-/* 11. code and keyboards */
+/* 9. code and keyboards */
 code,
 samp,
 kbd,
@@ -447,7 +435,7 @@ pre code {
 	border: 0;
 }
 
-/* 12. details */
+/* 10. details */
 details {
 	padding: 0.5rem 1rem;
 	background: var(--dc-bg-2);
@@ -474,7 +462,7 @@ details[open] > *:last-child {
 	padding-bottom: 0;
 }
 
-/* 13. description lists */
+/* 11. description lists */
 dt {
 	font-weight: bold;
 }
@@ -483,13 +471,13 @@ dd::before {
 	content: "→ ";
 }
 
-/* 14. horizontal rules */
+/* 12 horizontal rules */
 hr {
 	border: 0;
 	border-bottom: 2px solid var(--dc-bg-3);
 }
 
-/* 15. fieldsets */
+/* 13. fieldsets */
 fieldset {
 	margin-top: 1rem;
 	padding: 2rem;
@@ -501,7 +489,7 @@ legend {
 	padding: auto 0.5rem;
 }
 
-/* 16. tables */
+/* 14. tables */
 table {
 	border-collapse: collapse;
 	width: 100%;
@@ -527,7 +515,7 @@ table caption {
 	margin-bottom: 0.5rem;
 }
 
-/* 17. lists */
+/* 15. lists */
 ol,
 ul {
 	padding-left: 2rem;
