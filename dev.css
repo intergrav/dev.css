@@ -255,7 +255,8 @@ header nav ul li {
 }
 
 header nav ul li:not(:first-child)::before {
-	content: "• ";
+	content: "•";
+	margin: 0 0.25em;
 }
 
 footer > *:last-child {
