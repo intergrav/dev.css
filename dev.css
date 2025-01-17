@@ -196,7 +196,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-@supports not (light-dark()) {
+@supports not (color: light-dark(#fff, #000)) {
 	a {
 		text-decoration: underline;
 	}
