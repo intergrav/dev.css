@@ -246,11 +246,12 @@ header h3 {
 }
 
 header nav ul {
+	display: flex;
+	list-style: none;
 	padding: 0;
 }
 
 header nav ul li {
-	display: inline-block;
 	margin: 0;
 }
 
@@ -264,16 +265,18 @@ footer > *:last-child {
 }
 
 footer nav ul {
+	display: flex;
+	list-style: none;
 	padding: 0;
 }
 
 footer nav ul li {
-	display: inline-block;
 	margin: 0;
 }
 
 footer nav ul li:not(:first-child)::before {
-	content: "• ";
+	content: "•";
+	margin: 0 0.25em;
 }
 
 main,
