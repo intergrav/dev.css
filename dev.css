@@ -253,6 +253,7 @@ header nav ul {
 
 header nav ul li {
 	margin: 0;
+	display: flex;
 }
 
 header nav ul li:not(:first-child)::before {
@@ -272,6 +273,7 @@ footer nav ul {
 
 footer nav ul li {
 	margin: 0;
+	display: flex;
 }
 
 footer nav ul li:not(:first-child)::before {
