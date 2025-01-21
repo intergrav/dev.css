@@ -215,6 +215,10 @@ dev.css supports custom colors and fonts through themes. You can find some pre-m
 
 If you are creating your own theme, it is recommended to use the `boilerplate-auto.css` rather than the `boilerplate.css` template for better accessibility.
 
+### Userstyles
+
+The built-in themes can also be installed to your userstyle manager, such as Stylus. That theme will override any website using dev.css. To install one, open the theme's file in your browser.
+
 ## Credits
 
 - [xz/new.css](https://github.com/xz/new.css) being a major inspiration for this project
