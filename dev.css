@@ -252,7 +252,7 @@ footer > *:last-child {
 header nav ul,
 footer nav ul {
 	display: flex;
-	overflow-x: auto;
+	flex-wrap: wrap;
 	list-style: none;
 	padding: 0;
 }
