@@ -1,6 +1,6 @@
 /* ==userstyle==
 @name         boilerplate-auto for dev.css
-@description  a template that you can modify, but with two color schemes for light/dark mode. copied from dev.css defaults. you can remove lines that you want to keep as the dev.css default, such as the font lines
+@description  a template that you can modify, but with two color schemes for light/dark mode. copied from dev.css defaults. remove lines that you want to keep as the dev.css default, such as the font lines
 @namespace    author
 @version      1.0.0
 @author       author <author@example.com> (https://example.com)
@@ -11,8 +11,8 @@
 
 :root {
 	/* font families */
-	--dc-font: "Geist", "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
-		sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	--dc-font: "Geist", "Inter", system-ui, "Segoe UI Variable Text", "Segoe UI",
+		Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 	--dc-font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Consolas,
 		"Liberation Mono", Menlo, monospace;
 

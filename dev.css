@@ -23,8 +23,8 @@
 /* adjustable by you! see ./theme/boilerplate-auto.css */
 :root {
 	/* font families */
-	--dc-font: "Geist", "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
-		sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	--dc-font: "Geist", "Inter", system-ui, "Segoe UI Variable Text", "Segoe UI",
+		Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 	--dc-font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Consolas,
 		"Liberation Mono", Menlo, monospace;
 
