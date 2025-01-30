@@ -11,10 +11,12 @@
 
 :root {
 	/* font families */
-	--dc-font: "Geist", "Inter", system-ui, "Segoe UI Variable Text", "Segoe UI",
-		Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-	--dc-font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Consolas,
-		"Liberation Mono", Menlo, monospace;
+	/* modified from https://systemfontstack.com */
+	--dc-font: "Geist", "Inter", -apple-system, BlinkMacSystemFont, avenir next,
+		avenir, segoe ui variable text, segoe ui, helvetica neue, helvetica,
+		Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+	--dc-font-mono: "Geist Mono", Menlo, Consolas, Monaco, Liberation Mono,
+		Lucida Console, monospace;
 
 	/* colors */
 	--dc-cs: light; /* light/dark scrollbars, inputs, etc */
