@@ -11,9 +11,10 @@
 
 :root {
 	/* font families */
+	/* modified from https://systemfontstack.com */
 	--dc-font: var(--dc-font-mono);
-	--dc-font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Consolas,
-		"Liberation Mono", Menlo, monospace;
+	--dc-font-mono: "Geist Mono", Menlo, Consolas, Monaco, Liberation Mono,
+		Lucida Console, monospace;
 
 	/* colors */
 	--dc-cs: dark;
