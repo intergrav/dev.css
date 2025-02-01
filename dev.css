@@ -20,15 +20,12 @@
 */
 
 /* 1. configurable variables */
-/* adjustable by you! see ./theme/boilerplate-auto.css */
+/* adjustable by you! see ./theme/boilerplate.user.css */
 :root {
 	/* font families */
-	/* modified from https://systemfontstack.com */
-	--dc-font: "Geist", "Inter", -apple-system, BlinkMacSystemFont, avenir next,
-		avenir, segoe ui variable text, segoe ui, helvetica neue, helvetica,
-		Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-	--dc-font-mono: "Geist Mono", Menlo, Consolas, Monaco, Liberation Mono,
-		Lucida Console, monospace;
+	--dc-font: "Geist", "Inter", ui-sans-serif, system-ui, sans-serif;
+	--dc-font-mono: "Geist Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
+		Menlo, Consolas, "DejaVu Sans Mono", monospace;
 
 	/* light/dark colors */
 	--dc-cs: light dark; /* light and dark scrollbars, inputs, etc */
