@@ -213,7 +213,7 @@ dev.css supports custom colors and fonts through themes. You can find some pre-m
 />
 ```
 
-If you are creating your own theme, it is recommended to use the `boilerplate-auto.css` rather than the `boilerplate.css` template for better accessibility.
+If you are creating your own theme, see the `boilerplate.user.css` file.
 
 ### Userstyles
 
