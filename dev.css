@@ -217,7 +217,7 @@ mark {
 
 body {
 	max-width: 48rem;
-	margin: 0 auto;
+	margin: 1rem auto 0;
 	padding: 0 1rem;
 	background: var(--dc-bg-2);
 	overflow-x: hidden;
@@ -226,6 +226,7 @@ body {
 header {
 	padding: 1rem calc(50vw - 50%);
 	margin: 0rem calc(50% - 50vw) 0rem;
+	margin-top: -1rem;
 }
 
 header * {
