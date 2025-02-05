@@ -9,7 +9,7 @@
 	5. typography
 	6. document
 	7. blockquotes
-	8 buttons and inputs
+	8. buttons and inputs
 	9. code and keyboards
 	10. details
 	11. description lists
@@ -176,7 +176,7 @@ h3 {
 article h1,
 article h2,
 article h3 {
-	padding-bottom: none;
+	padding-bottom: 0;
 	border-bottom: none;
 }
 
@@ -225,7 +225,7 @@ body {
 
 header {
 	padding: 1rem calc(50vw - 50%);
-	margin: 0rem calc(50% - 50vw) 0rem;
+	margin: 0 calc(50% - 50vw) 0;
 	margin-top: -1rem;
 }
 
