@@ -23,7 +23,7 @@ dev.css is a great choice for:
 - Collecting your most used links
 - Prototyping your raw HTML
 
-dev.css was not meant for very complex websites. An example of a site that uses dev.css is [SkywardMC's wiki](https://skywardmc.org).
+dev.css was not meant for very complex websites. Although, if you need something more complex, you could build from/modify this stylesheet for your website. An example of a site that uses dev.css is [SkywardMC's wiki](https://skywardmc.org).
 
 ## Importing
 
