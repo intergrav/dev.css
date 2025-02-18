@@ -277,6 +277,7 @@ article {
 
 main article {
 	background: var(--dc-bg-2);
+	border-radius: 0.375rem;
 }
 
 main > *:last-child,
