@@ -104,7 +104,6 @@ h6 {
 address,
 area,
 article,
-aside,
 audio,
 blockquote,
 datalist,
@@ -270,31 +269,20 @@ footer nav ul li:not(:first-child)::before {
 }
 
 main,
-aside {
+article {
 	padding: 1.5rem;
 	background: var(--dc-bg-1);
 	border: 1px solid var(--dc-bg-3);
 	border-radius: 0.25rem;
 }
 
-article {
-	padding: 1rem;
+main article {
 	background: var(--dc-bg-2);
-	border: 1px solid var(--dc-bg-3);
-	border-radius: 0.375rem;
 }
 
-article > *:last-child,
-aside > *:last-child,
-main > *:last-child {
+main > *:last-child,
+article > *:last-child {
 	margin-bottom: 0;
-}
-
-aside h1,
-aside h2,
-aside h3 {
-	padding-bottom: 0;
-	border-bottom: none;
 }
 
 @media only screen and (max-width: 48rem) {
@@ -317,7 +305,7 @@ aside h3 {
 	}
 
 	main,
-	aside {
+	article {
 		padding: 1rem;
 	}
 }
@@ -325,9 +313,13 @@ aside h3 {
 @media only screen and (min-width: 82rem) {
 	aside {
 		position: absolute;
-		left: calc(50% - ((48rem) / 2) - (16rem));
 		width: 16rem;
-		overflow-y: auto;
+	}
+	aside:nth-child(even) {
+		left: calc(50% - ((48rem) / 2) - (16rem));
+	}
+	aside:nth-child(odd) {
+		right: calc(50% - ((48rem) / 2) - (16rem));
 	}
 }
 
