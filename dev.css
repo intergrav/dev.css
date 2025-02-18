@@ -465,7 +465,7 @@ dd::before {
 	content: "→ ";
 }
 
-/* 12 horizontal rules */
+/* 12. horizontal rules */
 hr {
 	border: 0;
 	border-bottom: 2px solid var(--dc-bg-3);
