@@ -25,7 +25,9 @@ dev.css is a great choice for:
 
 dev.css was not meant for very complex websites. Although, if you need something more complex, you could build from/modify this stylesheet for your website. An example of a site that uses dev.css is [SkywardMC's wiki](https://skywardmc.org).
 
-## Importing
+## Installing
+
+### HTML import
 
 To use dev.css in your HTML, simply add the following line to the `<head>` section of your HTML file:
 
@@ -35,6 +37,18 @@ To use dev.css in your HTML, simply add the following line to the `<head>` secti
 	href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@4"
 />
 ```
+
+### `npm`, `pnpm`, etc
+
+Another way to install dev.css is to add the npm package to your project through your preferred package manager. This command adds the latest version to your project.
+
+```sh
+npm add @intergrav/dev.css
+# or
+pnpm add @intergrav/dev.css
+```
+
+### Importing fonts
 
 You can also load a font from [intergrav/fonts](https://github.com/intergrav/fonts#readme) (or anywhere else) if you'd like a consistent font. Geist and Inter fonts work with dev.css out of the box, other fonts will require a theme to be used. If these fonts are not available, the default system/browser sans-serif and monospace fonts will be used, such as Microsoft's Segoe UI or Apple's San Francisco.
 
