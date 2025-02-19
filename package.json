@@ -21,7 +21,8 @@
 	"author": "intergrav <intergrav@proton.me> (https://devins.page)",
 	"files": [
 		"theme",
-		"addon"
+		"addon",
+		"badge.svg"
 	],
 	"main": "dev.css",
 	"repository": "github:intergrav/dev.css",
