@@ -6,6 +6,7 @@
 	header {
 		position: sticky;
 		top: 0;
+		z-index: 1000;
 		background-color: var(--dc-bg-2);
 	}
 	@supports (backdrop-filter: blur(24px)) {
