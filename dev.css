@@ -1,5 +1,5 @@
 /* dev.css v4, a lightweight CSS framework - https://github.com/intergrav/dev.css */
-/* about: tiny, simple, classless CSS framework in the style of Vercel's Geist design system */
+/* about: tiny, simple, classless CSS framework inspired by new.css */
 
 /* table of contents
 	1. configurable variables
@@ -24,9 +24,8 @@
 :root {
 	/* font families */
 	--dc-font: "Geist", "Inter", ui-sans-serif, system-ui, sans-serif;
-	--dc-font-mono:
-		"Geist Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
-		Consolas, "DejaVu Sans Mono", monospace;
+	--dc-font-mono: "Geist Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
+		Menlo, Consolas, "DejaVu Sans Mono", monospace;
 
 	/* light/dark colors */
 	--dc-cs: light dark; /* light and dark scrollbars, inputs, etc */
