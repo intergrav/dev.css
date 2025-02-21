@@ -1,6 +1,6 @@
 /* ==userstyle==
 @name         boilerplate for dev.css
-@description  a template that you can modify. mostly copied from dev.css defaults. removing lines will revert to the dev.css default, for example the font lines
+@description  a template that you can modify. copied from dev.css defaults. removing lines will revert to the dev.css default, for example the font lines
 @namespace    author
 @version      1.0.0
 @author       author <author@example.com> (https://example.com)
@@ -11,8 +11,9 @@
 
 :root {
 	/* font families */
-	--dc-font: sans-serif;
-	--dc-font-mono: monospace;
+	--dc-font: "Geist", "Inter", ui-sans-serif, system-ui, sans-serif;
+	--dc-font-mono: "Geist Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
+		Menlo, Consolas, "DejaVu Sans Mono", monospace;
 
 	/* light/dark colors */
 	--dc-cs: light dark; /* light/dark scrollbars, inputs, etc */
