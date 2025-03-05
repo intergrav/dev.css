@@ -106,26 +106,28 @@ For your main content, or the actual content of the page, it is heavily recommen
 
 ### Sidebar
 
-Optionally, you can add a sidebar to your page for pretty much anything you'd like. A good usage for this could be, for example, complex navigation on a docs website, where you wouldn't be able to fit it all into the header. The sidebar will sort normally with the rest of the content on smaller screens. To make a sidebar, place an `<aside>` tag, and then put an `<article>` inside. You must put it above the `<main>` content. You can have up to two sidebars per page - the second one will appear on the right side. Here's an example:
+Optionally, you can add a sidebar to your page for pretty much anything you'd like. A good usage for this could be, for example, complex navigation on a docs website, where you wouldn't be able to fit it all into the header. The sidebar will sort normally with the rest of the content on smaller screens. To make a sidebar, place an `<aside>` tag, and then put an `<article>` inside. You must put it above the `<main>` content. You can have up to two sidebars per page - the second one will appear on the right side. You can also make a sidebar collapsible by wrapping it's contents in a `<details>` tag - adding the `open` attribute will make it open by default. Here's an example:
 
 ```html
 <aside>
 	<article>
-		<h1>Sidebar</h1>
-		<nav>
-			<ul>
-				<li><a href="https://example.com">Page 1</a></li>
-				<li>
-					<a href="https://example.com">Page 2</a>
-					<ul>
-						<li><a href="https://example.com">Page 2.1</a></li>
-						<li><a href="https://example.com">Page 2.2</a></li>
-					</ul>
-				</li>
-				<li><a href="https://example.com">Page 3</a></li>
-				<li><a href="https://example.com">Page 4</a></li>
-			</ul>
-		</nav>
+		<details open>
+			<summary>Sidebar</summary>
+			<nav>
+				<ul>
+					<li><a href="https://example.com">Page 1</a></li>
+					<li>
+						<a href="https://example.com">Page 2</a>
+						<ul>
+							<li><a href="https://example.com">Page 2.1</a></li>
+							<li><a href="https://example.com">Page 2.2</a></li>
+						</ul>
+					</li>
+					<li><a href="https://example.com">Page 3</a></li>
+					<li><a href="https://example.com">Page 4</a></li>
+				</ul>
+			</nav>
+		</details>
 	</article>
 </aside>
 ```
