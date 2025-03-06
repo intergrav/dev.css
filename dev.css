@@ -430,7 +430,7 @@ pre code {
 }
 
 /* 10. details */
-details:not(aside details) {
+details:not(aside article details) {
 	padding: 0.5rem 1rem;
 	background: var(--dc-bg-2);
 	border: 1px solid var(--dc-bg-3);
