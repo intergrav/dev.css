@@ -442,7 +442,7 @@ summary {
 	font-weight: bold;
 }
 
-details[open] summary {
+details[open] > summary {
 	margin-bottom: 0.5rem;
 }
 
