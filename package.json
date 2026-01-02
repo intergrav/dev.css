@@ -28,5 +28,8 @@
 	"repository": "github:intergrav/dev.css",
 	"prettier": {
 		"useTabs": true
+	},
+	"devDependencies": {
+		"prettier": "^3.7.4"
 	}
 }
