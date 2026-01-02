@@ -12,8 +12,9 @@
 :root {
 	/* font families */
 	--dc-font: "Geist", "Inter", ui-sans-serif, system-ui, sans-serif;
-	--dc-font-mono: "Geist Mono", ui-monospace, "Cascadia Code", "Source Code Pro",
-		Menlo, Consolas, "DejaVu Sans Mono", monospace;
+	--dc-font-mono:
+		"Geist Mono", ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
+		Consolas, "DejaVu Sans Mono", monospace;
 
 	/* light/dark colors */
 	--dc-cs: light dark; /* light/dark scrollbars, inputs, etc */
