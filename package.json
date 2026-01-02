@@ -1,6 +1,6 @@
 {
 	"name": "@intergrav/dev.css",
-	"version": "4.2.5",
+	"version": "4.2.6",
 	"description": "Tiny, simple, classless CSS framework inspired by new.css.",
 	"keywords": [
 		"css",
@@ -22,7 +22,8 @@
 	"files": [
 		"theme",
 		"addon",
-		"badge.svg"
+		"badge.svg",
+		"dev.css"
 	],
 	"main": "dev.css",
 	"repository": "github:intergrav/dev.css",
