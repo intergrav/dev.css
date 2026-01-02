@@ -220,6 +220,17 @@ This addon creates a small "scroll to top" button in the bottom right corner of 
 ></script>
 ```
 
+### `responsive-sidebar.js`
+
+This addon automatically opens and closes `<details>` elements inside sidebars at the 82rem breakpoint. This prevents sidebars from looking awkward on wide screens and improves usability on small screens. To use this addon, add the following line after the `dev.css` import:
+
+```html
+<script
+	src="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@4/addon/responsive-sidebar.min.js"
+	defer
+></script>
+```
+
 ## Themes
 
 dev.css supports custom colors and fonts through themes. You can find some pre-made themes in the `/theme` folder. To use a theme, simply apply it after the dev.css stylesheet. There are night and day themes, a set of Catppuccin themes, and a terminal theme. For example, to apply the terminal theme, add the following line after the `dev.css` import:
